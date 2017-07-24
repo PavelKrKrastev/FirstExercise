@@ -16,7 +16,7 @@
 
         <DockPanel>
             <Label Grid.Column="0" DockPanel.Dock="Top">Select Category:</Label>
-            <ListBox Name="lbCategory" Margin="5,0,5,5" HorizontalContentAlignment="Center" DockPanel.Dock="Bottom" SelectedIndex="0" ItemsSource="{Binding AllModels}">
+            <ListBox Name="lbCategory" Margin="10,0,10,10" HorizontalContentAlignment="Center" DockPanel.Dock="Bottom" SelectedIndex="0" ItemsSource="{Binding AllModels}">
 
                 <ListBox.ItemTemplate>
                     <DataTemplate>
@@ -68,8 +68,8 @@
                         <DataTemplate>
                             <ContentControl  Content="{Binding TabContent}"/>
                         </DataTemplate>
-
                     </TabControl.ContentTemplate>
+                    
                 </TabControl>
             </DockPanel>
         </Grid>

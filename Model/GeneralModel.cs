@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NemetschekFirstAssigment.Model
 {
@@ -18,9 +14,9 @@ namespace NemetschekFirstAssigment.Model
             set { _name = value; }
         }
 
-        private ObservableCollection<TabContentModel> _tabSubcategory;
+        private List<TabContentModel> _tabSubcategory;
 
-        public ObservableCollection<TabContentModel> TabSubcategory
+        public List<TabContentModel> TabSubcategory
         {
             get { return _tabSubcategory; }
             set { _tabSubcategory = value; }
