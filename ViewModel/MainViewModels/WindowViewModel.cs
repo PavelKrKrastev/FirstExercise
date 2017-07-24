@@ -1,5 +1,6 @@
 ﻿using NemetschekFirstAssigment.Model;
 using NemetschekFirstAssigment.View;
+using NemetschekFirstAssigment.ViewModel.MainViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,21 +10,65 @@ using System.Threading.Tasks;
 
 namespace NemetschekFirstAssigment.ViewModel
 {
-    class WindowViewModel
+    class WindowViewModel : BaseViewModel
     {
 
-        public MainModel Window { get; set; }
+        private MainModel _window;
 
-        public ObservableCollection<TabContentModel> Subcategories { get; set; }
+        internal MainModel Window
+        {
+            get { return _window; }
+            set
+            {
+                _window = value;
+                RaisePropertyChangedEvent("Window");
+            }
+        }
 
-        public object ViewContent { get; set; }
+        private ObservableCollection<TabContentModel> _subcategories;
 
-        public object ResolutionContent { get; set; }
+        public ObservableCollection<TabContentModel> Subcategories
+        {
+            get { return _subcategories; }
+            set
+            {
+                _subcategories = value;
+                RaisePropertyChangedEvent("Subcategories");
+            }
+        }
+
+        private object _viewContent;
+
+        public object ViewContent
+        {
+            get { return _viewContent; }
+            set
+            {
+                _viewContent = value;
+                RaisePropertyChangedEvent("ViewContent");
+            }
+        }
+
+        private object _resolutionContent;
+
+        public object ResolutionContent
+        {
+            get { return _resolutionContent; }
+            set
+            {
+                _resolutionContent = value;
+                RaisePropertyChangedEvent("ResolutionContent");
+            }
+        }
 
         public string Name
         {
             get { return Window.Name; }
-            set { Window.Name = value; }
+            set
+            {
+                Window.Name = value;
+                RaisePropertyChangedEvent("Name");
+            }
         }
 
         public WindowViewModel()

@@ -1,5 +1,6 @@
 ﻿using NemetschekFirstAssigment.Model;
 using NemetschekFirstAssigment.View;
+using NemetschekFirstAssigment.ViewModel.MainViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,21 +10,53 @@ using System.Threading.Tasks;
 
 namespace NemetschekFirstAssigment.ViewModel
 {
-    class ToolsViewModel
+    class ToolsViewModel : BaseViewModel
     {
 
-        public MainModel Tools { get; set; }
+        private MainModel _tools;
 
-        public TabContentModel SubCategory { get; set; }
+        public MainModel Tools
+        {
+            get { return _tools; }
+            set
+            {
+                _tools = value;
+                RaisePropertyChangedEvent("Tools");
+            }
+        }
 
-        public ObservableCollection<TabContentModel> Subcategories { get; set; }
+        private ObservableCollection<TabContentModel> _subcategories;
 
-        public object ToolsContent { get; set; }
+        public ObservableCollection<TabContentModel> Subcategories
+        {
+            get { return _subcategories; }
+            set
+            {
+                _subcategories = value;
+                RaisePropertyChangedEvent("Subcategories");
+            }
+        }
+
+        private object _toolsContent;
+
+        public object ToolsContent
+        {
+            get { return _toolsContent; }
+            set
+            {
+                _toolsContent = value;
+                RaisePropertyChangedEvent("ToolsContent");
+            }
+        }
 
         public string Name
         {
             get { return Tools.Name; }
-            set { Tools.Name = value; }
+            set
+            {
+                Tools.Name = value;
+                RaisePropertyChangedEvent("Name");
+            }
         }
 
         public ToolsViewModel()

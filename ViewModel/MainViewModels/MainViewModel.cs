@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NemetschekFirstAssigment.ViewModel.MainViewModels;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NemetschekFirstAssigment.ViewModel
 {
-    class MainViewModel
+    class MainViewModel : BaseViewModel
     {
 
         public MainViewModel()
@@ -20,7 +21,17 @@ namespace NemetschekFirstAssigment.ViewModel
                 new AdvancedViewModel(),
             };
         }
-        public ObservableCollection<object> AllModels { get; set; }
+        private ObservableCollection<object> _allModels;
+
+        public ObservableCollection<object> AllModels
+        {
+            get { return _allModels; }
+            set
+            {
+                _allModels = value;
+                RaisePropertyChangedEvent("AllModels");
+            }
+        }
 
     }
 }

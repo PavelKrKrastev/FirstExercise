@@ -1,5 +1,6 @@
 ﻿using NemetschekFirstAssigment.Model;
 using NemetschekFirstAssigment.View;
+using NemetschekFirstAssigment.ViewModel.MainViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,25 +10,85 @@ using System.Threading.Tasks;
 
 namespace NemetschekFirstAssigment.ViewModel
 {
-    class AdvancedViewModel
+    class AdvancedViewModel : BaseViewModel
     {
+        private MainModel _advanced;
+        public MainModel Advanced
+        {
+            get { return _advanced; }
+            set
+            {
+                _advanced = value;
+                RaisePropertyChangedEvent("Advanced");
+            }
+        }
+        private ObservableCollection<TabContentModel> _subcategories;
+        public ObservableCollection<TabContentModel> Subcategories
+        {
+            get { return _subcategories; }
+            set
+            {
+                _subcategories = value;
+                RaisePropertyChangedEvent("Subcategories");
+            }
+        }
 
-        public MainModel Advanced { get; set; }
+        private object _advanced1Content;
 
-        public ObservableCollection<TabContentModel> Subcategories { get; set; }
+        public object Advanced1Content
+        {
+            get { return _advanced1Content; }
+            set
+            {
+                _advanced1Content = value;
+                RaisePropertyChangedEvent("Advanced1Content");
+            }
+        }
 
-        public object Advanced1Content { get; set; }
+        private object _advanced2Content;
 
-        public object Advanced2Content { get; set; }
+        public object Advanced2Content
+        {
+            get { return _advanced2Content; }
+            set
+            {
+                _advanced2Content = value;
+                RaisePropertyChangedEvent("Advanced2Content");
+            }
+        }
 
-        public object Advanced3Content { get; set; }
+        private object _advanced3Content;
 
-        public object Advanced4Content { get; set; }
+        public object Advanced3Content
+        {
+            get { return _advanced3Content; }
+            set
+            {
+                _advanced3Content = value;
+                RaisePropertyChangedEvent("Advanced3Content");
+            }
+        }
+
+        private object _advanced4Content;
+
+        public object Advanced4Content
+        {
+            get { return _advanced4Content; }
+            set
+            {
+                _advanced4Content = value;
+                RaisePropertyChangedEvent("Advanced4Content");
+            }
+        }
 
         public string Name
         {
             get { return Advanced.Name; }
-            set { Advanced.Name = value; }
+            set
+            {
+                Advanced.Name = value;
+                RaisePropertyChangedEvent("Name");
+            }
         }
 
         public AdvancedViewModel()

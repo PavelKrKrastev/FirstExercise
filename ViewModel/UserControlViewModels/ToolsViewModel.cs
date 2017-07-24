@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NemetschekFirstAssigment.ViewModel.MainViewModels;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -7,16 +8,30 @@ using System.Threading.Tasks;
 
 namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
 {
-    class ToolsViewModel
+    class ToolsViewModel : BaseViewModel
     {
-        public ObservableCollection<String> ToolsList { get; set; }
+        private ObservableCollection<String> _toolsList;
+
+        public ObservableCollection<String> ToolsList
+        {
+            get { return _toolsList; }
+            set
+            {
+                _toolsList = value;
+                RaisePropertyChangedEvent("ToolsList");
+            }
+        }
 
         private bool _checkBox1Value;
 
         public bool CheckBox1Value
         {
             get { return _checkBox1Value; }
-            set { _checkBox1Value = value; }
+            set
+            {
+                _checkBox1Value = value;
+                RaisePropertyChangedEvent("CheckBox1Value");
+            }
         }
 
         private bool _checkBox2Value;
@@ -24,7 +39,11 @@ namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
         public bool CheckBox2Value
         {
             get { return _checkBox2Value; }
-            set { _checkBox2Value = value; }
+            set
+            {
+                _checkBox2Value = value;
+                RaisePropertyChangedEvent("CheckBox2Value");
+            }
         }
 
         private bool _checkBox3Value;
@@ -32,15 +51,23 @@ namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
         public bool CheckBox3Value
         {
             get { return _checkBox3Value; }
-            set { _checkBox3Value = value; }
+            set
+            {
+                _checkBox3Value = value;
+                RaisePropertyChangedEvent("CheckBox3Value");
+            }
         }
 
         private bool _radioButtonValue;
 
         public bool RadioButtonValue
         {
-            get { return _radioButtonValue;}
-            set { _radioButtonValue = value;}
+            get { return _radioButtonValue; }
+            set
+            {
+                _radioButtonValue = value;
+                RaisePropertyChangedEvent("RadioButtonValue");
+            }
         }
 
         public ToolsViewModel()

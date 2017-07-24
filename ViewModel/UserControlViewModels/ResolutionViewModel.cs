@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NemetschekFirstAssigment.ViewModel.MainViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
 {
-    class ResolutionViewModel
+    class ResolutionViewModel : BaseViewModel
     {
 
         private bool _checkBoxValue;
@@ -14,7 +15,11 @@ namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
         public bool CheckBoxValue
         {
             get { return _checkBoxValue; }
-            set { _checkBoxValue = value; }
+            set
+            {
+                _checkBoxValue = value;
+                RaisePropertyChangedEvent("CheckBoxValue");
+            }
         }
 
         private string _lblValue;
@@ -22,7 +27,11 @@ namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
         public string LblValue
         {
             get { return _lblValue; }
-            set { _lblValue = value; }
+            set
+            {
+                _lblValue = value;
+                RaisePropertyChangedEvent("LblValue");
+            }
         }
 
         public ResolutionViewModel()
