@@ -56,47 +56,47 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModel\MainViewModels\GeneralViewModel.cs" />
-    <Compile Include="ViewModel\MainViewModels\BaseViewModel.cs" />
-    <Compile Include="ViewModel\MainViewModels\MainViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\Advanced1ViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\Advanced2ViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\Advanced3ViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\Advanced4ViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\OptionsViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\PreferencesViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\ResolutionViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\SettingsViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\ToolsViewModel.cs" />
-    <Compile Include="ViewModel\UserControlViewModels\ViewViewModel.cs" />
-    <Compile Include="View\Advanced1View.xaml.cs">
+    <Compile Include="ViewModel\GeneralViewModel.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\AdvancedView\Advanced1ViewModel.cs" />
+    <Compile Include="View\AdvancedView\Advanced2ViewModel.cs" />
+    <Compile Include="View\AdvancedView\Advanced3ViewModel.cs" />
+    <Compile Include="View\AdvancedView\Advanced4ViewModel.cs" />
+    <Compile Include="View\GeneralView\OptionsViewModel.cs" />
+    <Compile Include="View\GeneralView\PreferencesViewModel.cs" />
+    <Compile Include="View\WindowView\ResolutionViewModel.cs" />
+    <Compile Include="View\GeneralView\SettingsViewModel.cs" />
+    <Compile Include="View\ToolView\ToolsViewModel.cs" />
+    <Compile Include="View\WindowView\ViewViewModel.cs" />
+    <Compile Include="View\AdvancedView\Advanced1View.xaml.cs">
       <DependentUpon>Advanced1View.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Advanced4View.xaml.cs">
+    <Compile Include="View\AdvancedView\Advanced4View.xaml.cs">
       <DependentUpon>Advanced4View.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Advanced2View.xaml.cs">
+    <Compile Include="View\AdvancedView\Advanced2View.xaml.cs">
       <DependentUpon>Advanced2View.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\Advanced3View.xaml.cs">
+    <Compile Include="View\AdvancedView\Advanced3View.xaml.cs">
       <DependentUpon>Advanced3View.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\OptionsView.xaml.cs">
+    <Compile Include="View\GeneralView\OptionsView.xaml.cs">
       <DependentUpon>OptionsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\PreferencesView.xaml.cs">
+    <Compile Include="View\GeneralView\PreferencesView.xaml.cs">
       <DependentUpon>PreferencesView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ResolutionView.xaml.cs">
+    <Compile Include="View\WindowView\ResolutionView.xaml.cs">
       <DependentUpon>ResolutionView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\SettingsView.xaml.cs">
+    <Compile Include="View\GeneralView\SettingsView.xaml.cs">
       <DependentUpon>SettingsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ToolsView.xaml.cs">
+    <Compile Include="View\ToolView\ToolsView.xaml.cs">
       <DependentUpon>ToolsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\ViewView.xaml.cs">
+    <Compile Include="View\WindowView\ViewView.xaml.cs">
       <DependentUpon>ViewView.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -111,43 +111,43 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="View\Advanced1View.xaml">
+    <Page Include="View\AdvancedView\Advanced1View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Advanced4View.xaml">
+    <Page Include="View\AdvancedView\Advanced4View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Advanced2View.xaml">
+    <Page Include="View\AdvancedView\Advanced2View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Advanced3View.xaml">
+    <Page Include="View\AdvancedView\Advanced3View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\OptionsView.xaml">
+    <Page Include="View\GeneralView\OptionsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\PreferencesView.xaml">
+    <Page Include="View\GeneralView\PreferencesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ResolutionView.xaml">
+    <Page Include="View\WindowView\ResolutionView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\SettingsView.xaml">
+    <Page Include="View\GeneralView\SettingsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ToolsView.xaml">
+    <Page Include="View\ToolView\ToolsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ViewView.xaml">
+    <Page Include="View\WindowView\ViewView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

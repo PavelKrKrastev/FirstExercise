@@ -12,19 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NemetschekFirstAssigment.ViewModel.UserControlViewModels;
+using NemetschekFirstAssigment.View.AdvancedView;
 
 namespace NemetschekFirstAssigment.View
 {
     /// <summary>
-    /// Interaction logic for AdvancedView3.xaml
+    /// Interaction logic for Advanced1View.xaml
     /// </summary>
-    public partial class Advanced3View : UserControl
+    public partial class Advanced1View : UserControl
     {
-        public Advanced3View()
+        public Advanced1View()
         {
             InitializeComponent();
-            this.DataContext = new Advanced3ViewModel();
+            this.DataContext = new Advanced1ViewModel();
         }
     }
 }

@@ -1,9 +1,10 @@
 ﻿using NemetschekFirstAssigment.ViewModel.MainViewModels;
 
-namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
+namespace NemetschekFirstAssigment.View.AdvancedView
 {
-    class PreferencesViewModel : BaseViewModel
+    class Advanced3ViewModel : BaseViewModel
     {
+
         private bool _checkBoxValue;
 
         public bool CheckBoxValue
@@ -28,10 +29,11 @@ namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
             }
         }
 
-        public PreferencesViewModel()
+        public Advanced3ViewModel()
         {
             CheckBoxValue = false;
-            LblValue = "Preferences View Model";
+            LblValue = "Advanced 3 View Model";
         }
+
     }
 }

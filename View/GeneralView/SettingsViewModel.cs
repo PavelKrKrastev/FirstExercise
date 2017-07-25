@@ -1,8 +1,8 @@
 ﻿using NemetschekFirstAssigment.ViewModel.MainViewModels;
 
-namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
+namespace NemetschekFirstAssigment.View.GeneralView
 {
-    class ResolutionViewModel : BaseViewModel
+    class SettingsViewModel : BaseViewModel
     {
 
         private bool _checkBoxValue;
@@ -29,10 +29,10 @@ namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
             }
         }
 
-        public ResolutionViewModel()
+        public SettingsViewModel()
         {
             CheckBoxValue = true;
-            LblValue = "Resolution View Model";
+            LblValue = "Settings View Model";
         }
 
     }

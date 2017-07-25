@@ -12,19 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NemetschekFirstAssigment.ViewModel.UserControlViewModels;
+using NemetschekFirstAssigment.View.GeneralView;
 
 namespace NemetschekFirstAssigment.View
 {
     /// <summary>
-    /// Interaction logic for AdvancedView2.xaml
+    /// Interaction logic for SettingsView.xaml
     /// </summary>
-    public partial class Advanced2View : UserControl
+    public partial class SettingsView : UserControl
     {
-        public Advanced2View()
+        public SettingsView()
         {
             InitializeComponent();
-            this.DataContext = new Advanced2ViewModel();
+            this.DataContext = new SettingsViewModel();
         }
     }
 }

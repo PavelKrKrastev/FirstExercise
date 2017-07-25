@@ -2,7 +2,7 @@
 using System;
 using System.Collections.ObjectModel;
 
-namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
+namespace NemetschekFirstAssigment.View.AdvancedView
 {
     class Advanced1ViewModel : BaseViewModel
     {

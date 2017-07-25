@@ -12,19 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NemetschekFirstAssigment.ViewModel.UserControlViewModels;
+using NemetschekFirstAssigment.View.WindowView;
 
 namespace NemetschekFirstAssigment.View
 {
     /// <summary>
-    /// Interaction logic for ViewView.xaml
+    /// Interaction logic for ResolutionView.xaml
     /// </summary>
-    public partial class ViewView : UserControl
+    public partial class ResolutionView : UserControl
     {
-        public ViewView()
+        public ResolutionView()
         {
             InitializeComponent();
-            this.DataContext = new ViewViewModel();
+            this.DataContext = new ResolutionViewModel();
         }
     }
 }

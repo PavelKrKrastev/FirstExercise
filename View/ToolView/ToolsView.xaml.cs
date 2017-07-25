@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NemetschekFirstAssigment.View.ToolView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,19 +13,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NemetschekFirstAssigment.ViewModel.UserControlViewModels;
 
 namespace NemetschekFirstAssigment.View
 {
     /// <summary>
-    /// Interaction logic for PreferencesView.xaml
+    /// Interaction logic for ToolsView.xaml
     /// </summary>
-    public partial class PreferencesView : UserControl
+    public partial class ToolsView : UserControl
     {
-        public PreferencesView()
+        public ToolsView()
         {
             InitializeComponent();
-            this.DataContext = new PreferencesViewModel();
+            this.DataContext = new ToolsViewModel();
         }
     }
 }

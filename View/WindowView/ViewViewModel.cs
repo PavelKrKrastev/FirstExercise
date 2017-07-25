@@ -1,6 +1,6 @@
 ﻿using NemetschekFirstAssigment.ViewModel.MainViewModels;
 
-namespace NemetschekFirstAssigment.ViewModel.UserControlViewModels
+namespace NemetschekFirstAssigment.View.WindowView
 {
     class ViewViewModel : BaseViewModel
     {

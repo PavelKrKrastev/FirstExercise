@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NemetschekFirstAssigment.View.GeneralView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,19 +13,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NemetschekFirstAssigment.ViewModel.UserControlViewModels;
 
 namespace NemetschekFirstAssigment.View
 {
     /// <summary>
-    /// Interaction logic for Advanced4View.xaml
+    /// Interaction logic for OptionsView.xaml
     /// </summary>
-    public partial class Advanced4View : UserControl
+    public partial class OptionsView : UserControl
     {
-        public Advanced4View()
+        public OptionsView()
         {
             InitializeComponent();
-            this.DataContext = new Advanced4ViewModel();
+            this.DataContext = new OptionsViewModel();
         }
     }
 }
