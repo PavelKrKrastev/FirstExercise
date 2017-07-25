@@ -1,28 +1,30 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
-
-namespace NemetschekFirstAssigment.Models
+﻿namespace NemetschekFirstAssigment.Models
 {
-    class MainModel
+    class GeneralModel
     {
         #region private variables
         private string _name;
-        private List<TabContentModel> _tabSubcategory;
+        private object _tabContent;
         #endregion
 
-        #region public properties
+        #region
         public string Name
         {
             get { return _name; }
             set { _name = value; }
         }
-
-        public List<TabContentModel> TabSubcategory
+        public object TabContent
         {
-            get { return _tabSubcategory; }
-            set { _tabSubcategory = value; }
+            get { return _tabContent; }
+            set { _tabContent = value; }
         }
         #endregion
 
+        public GeneralModel(string Name, object TabContent)
+        {
+            this.Name = Name;
+            this.TabContent = TabContent;
+        }
     }
+
 }

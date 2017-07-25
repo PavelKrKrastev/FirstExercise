@@ -25,36 +25,36 @@ namespace NemetschekFirstAssigment.ViewModel
             AllModels = new ObservableCollection<object>
             {
                 #region General
-                new GeneralViewModel("General", new List<TabContentModel>()
+                new GeneralViewModel("General", new List<GeneralModel>()
                 {
-                new TabContentModel("Options", new OptionsView()),
-                new TabContentModel("Preferences", new PreferencesView()),
-                new TabContentModel("Settings", new SettingsView()),
+                new GeneralModel("Options", new OptionsView()),
+                new GeneralModel("Preferences", new PreferencesView()),
+                new GeneralModel("Settings", new SettingsView()),
                 }),
                 #endregion
 
                 #region Tools
-                new GeneralViewModel("Tools", new List<TabContentModel>()
+                new GeneralViewModel("Tools", new List<GeneralModel>()
                 {
-                 new TabContentModel("Tools", new ToolsView())
+                 new GeneralModel("Tools", new ToolsView())
                 }),
                 #endregion
 
                 #region Window
-                new GeneralViewModel("Window", new List<TabContentModel>()
+                new GeneralViewModel("Window", new List<GeneralModel>()
                 {
-                new TabContentModel("View", new ViewView()),
-                new TabContentModel("Resolution", new ResolutionView() ),
+                new GeneralModel("View", new ViewView()),
+                new GeneralModel("Resolution", new ResolutionView() ),
                 }),
                 #endregion
 
                 #region Advanced
-                new GeneralViewModel("Advanced", new List<TabContentModel>()
+                new GeneralViewModel("Advanced", new List<GeneralModel>()
                 {               
-                new TabContentModel("Advanced 1", new Advanced1View()),
-                new TabContentModel("Advanced 2", new Advanced2View()),
-                new TabContentModel("Advanced 3", new Advanced3View()),
-                new TabContentModel("Advanced 4", new Advanced4View()),
+                new GeneralModel("Advanced 1", new Advanced1View()),
+                new GeneralModel("Advanced 2", new Advanced2View()),
+                new GeneralModel("Advanced 3", new Advanced3View()),
+                new GeneralModel("Advanced 4", new Advanced4View()),
                 }),
                 #endregion
 

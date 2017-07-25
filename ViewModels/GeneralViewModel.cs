@@ -8,9 +8,9 @@ namespace NemetschekFirstAssigment.ViewModel
     {
         public string Name { get; set; }
 
-        public List<TabContentModel> Subcategories { get; set; }
+        public List<GeneralModel> Subcategories { get; set; }
 
-        public GeneralViewModel(string Name, List<TabContentModel> Subcategories)
+        public GeneralViewModel(string Name, List<GeneralModel> Subcategories)
         {
             this.Name = Name;
             this.Subcategories = Subcategories;
