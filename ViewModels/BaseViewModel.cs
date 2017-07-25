@@ -4,7 +4,6 @@ namespace NemetschekFirstAssigment.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void RaisePropertyChangedEvent(string propertyName)
