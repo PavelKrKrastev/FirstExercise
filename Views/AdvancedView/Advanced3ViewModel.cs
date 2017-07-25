@@ -1,0 +1,39 @@
+﻿using NemetschekFirstAssigment.ViewModels;
+
+namespace NemetschekFirstAssigment.Views.AdvancedView
+{
+    class Advanced3ViewModel : BaseViewModel
+    {
+
+        private bool _checkBoxValue;
+
+        public bool CheckBoxValue
+        {
+            get { return _checkBoxValue; }
+            set
+            {
+                _checkBoxValue = value;
+                RaisePropertyChangedEvent("CheckBoxValue");
+            }
+        }
+
+        private string _lblValue;
+
+        public string LblValue
+        {
+            get { return _lblValue; }
+            set
+            {
+                _lblValue = value;
+                RaisePropertyChangedEvent("LblValue");
+            }
+        }
+
+        public Advanced3ViewModel()
+        {
+            CheckBoxValue = false;
+            LblValue = "Advanced 3 View Model";
+        }
+
+    }
+}
