@@ -17,6 +17,12 @@
             set { _tabContent = value; }
         }
 
+        public TabContentModel(string Name, object TabContent)
+        {
+            this.Name = Name;
+            this.TabContent = TabContent;
+        }
+
     }
 
 }

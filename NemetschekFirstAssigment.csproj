@@ -56,12 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModel\MainViewModels\AdvancedViewModel.cs" />
-    <Compile Include="ViewModel\MainViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModel\MainViewModels\GeneralViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModel\MainViewModels\MainViewModel.cs" />
-    <Compile Include="ViewModel\MainViewModels\ToolsViewModel.cs" />
-    <Compile Include="ViewModel\MainViewModels\WindowViewModel.cs" />
     <Compile Include="ViewModel\UserControlViewModels\Advanced1ViewModel.cs" />
     <Compile Include="ViewModel\UserControlViewModels\Advanced2ViewModel.cs" />
     <Compile Include="ViewModel\UserControlViewModels\Advanced3ViewModel.cs" />
