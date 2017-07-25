@@ -2,20 +2,23 @@
 {
     class TabContentModel
     {
+        #region private variables
         private string _name;
+        private object _tabContent;
+        #endregion
+
+        #region
         public string Name
         {
             get { return _name; }
             set { _name = value; }
         }
-
-        private object _tabContent;
-
         public object TabContent
         {
             get { return _tabContent; }
             set { _tabContent = value; }
         }
+        #endregion
 
         public TabContentModel(string Name, object TabContent)
         {

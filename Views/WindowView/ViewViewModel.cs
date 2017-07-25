@@ -4,7 +4,6 @@ namespace NemetschekFirstAssigment.Views.WindowView
 {
     class ViewViewModel : BaseViewModel
     {
-
         public bool CheckBoxValue { get; set; }
 
         public string LblValue { get; set; }

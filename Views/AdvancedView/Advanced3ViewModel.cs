@@ -5,29 +5,24 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
     class Advanced3ViewModel : BaseViewModel
     {
 
+        #region private variables
         private bool _checkBoxValue;
+        private string _lblValue;
+        #endregion
 
+        #region public properties
         public bool CheckBoxValue
         {
             get { return _checkBoxValue; }
-            set
-            {
-                _checkBoxValue = value;
-                RaisePropertyChangedEvent("CheckBoxValue");
-            }
+            set { _checkBoxValue = value; }
         }
-
-        private string _lblValue;
 
         public string LblValue
         {
             get { return _lblValue; }
-            set
-            {
-                _lblValue = value;
-                RaisePropertyChangedEvent("LblValue");
-            }
+            set { _lblValue = value; }
         }
+        #endregion
 
         public Advanced3ViewModel()
         {

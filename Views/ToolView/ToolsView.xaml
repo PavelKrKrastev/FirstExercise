@@ -16,22 +16,27 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <ListBox Margin="10" ItemsSource="{Binding ToolsList}">
+        <StackPanel Margin="5,0">
+        <Label>Select option:</Label>
+        <ListBox ItemsSource="{Binding ToolsList}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding}" />
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        </StackPanel>
 
-        <StackPanel Grid.Column="1">
-            <CheckBox IsChecked="{Binding CheckBox1Value}" Content="Bind to a ViewModel" Margin="5,10,5,5" ></CheckBox>
+        <StackPanel Grid.Column="1" Margin="5,0">
+            <Label>Select option:</Label>
+            <CheckBox IsChecked="{Binding CheckBox1Value}" Content="Bind to a ViewModel" Margin="5,0,5,5" ></CheckBox>
             <CheckBox IsChecked="{Binding CheckBox2Value}" Content="Bind to a ViewModel" Margin="5" ></CheckBox>
             <CheckBox IsChecked="{Binding CheckBox3Value}" Content="Bind to a ViewModel" Margin="5" ></CheckBox>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="1">
-            <RadioButton GroupName="ToolsGroup" Margin="5,10,5,5">Yes</RadioButton>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0">
+            <Label>Select option:</Label>
+            <RadioButton GroupName="ToolsGroup" Margin="5,0,5,5">Yes</RadioButton>
             <RadioButton GroupName="ToolsGroup" Margin="5">No</RadioButton>
             <RadioButton GroupName="ToolsGroup" IsChecked="{Binding RadioButtonValue}" Margin="5">Maybe</RadioButton>
         </StackPanel>

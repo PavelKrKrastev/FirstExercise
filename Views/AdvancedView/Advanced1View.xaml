@@ -7,26 +7,23 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Center">
+            
+            <StackPanel>
+                <Label Content="Choose language:"/>
+                <ComboBox ItemsSource="{Binding LanguageMode}" Margin="5,0,5,5" SelectedIndex="0"></ComboBox>
+            </StackPanel>
 
-        <StackPanel VerticalAlignment="Center">
-            <Label Content="Choose language:"/>
-            <ComboBox ItemsSource="{Binding LanguageMode}" SelectedIndex="0"></ComboBox>
-        </StackPanel>
+            <StackPanel >
+                <Label Content="Select a power mode:"/>
+                <ComboBox ItemsSource="{Binding PowerMode}" Margin="5,0,5,5" SelectedIndex="0"></ComboBox>
+            </StackPanel>
 
-        <StackPanel Grid.Row="1" VerticalAlignment="Center">
-            <Label Content="Select a power mode:"/>
-            <ComboBox ItemsSource="{Binding PowerMode}" SelectedIndex="0"></ComboBox>
-        </StackPanel>
+            <StackPanel >
+                <Label Content="Select battery mode:"/>
+                <ComboBox ItemsSource="{Binding BatteryMode}" Margin="5,0,5,5" SelectedIndex="0"></ComboBox>
+            </StackPanel>
 
-        <StackPanel Grid.Row="2" VerticalAlignment="Center">
-            <Label Content="Select battery mode:"/>
-                <ComboBox ItemsSource="{Binding BatteryMode}" SelectedIndex="0"></ComboBox>
         </StackPanel>
 
     </Grid>

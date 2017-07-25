@@ -6,42 +6,11 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
 {
     class Advanced1ViewModel : BaseViewModel
     {
+        public ObservableCollection<String> LanguageMode { get; set; }
 
-        private ObservableCollection<String> _languageMode;
+        public ObservableCollection<String> PowerMode { get; set; }
 
-        public ObservableCollection<String> LanguageMode
-        {
-            get { return _languageMode; }
-            set
-            {
-                _languageMode = value;
-                RaisePropertyChangedEvent("LanguageMode");
-            }
-        }
-
-        private ObservableCollection<String> _powerMode;
-
-        public ObservableCollection<String> PowerMode
-        {
-            get { return _powerMode; }
-            set
-            {
-                _powerMode = value;
-                RaisePropertyChangedEvent("PowerMode");
-            }
-        }
-
-        private ObservableCollection<String> _batteryMode;
-
-        public ObservableCollection<String> BatteryMode
-        {
-            get { return _batteryMode; }
-            set
-            {
-                _batteryMode = value;
-                RaisePropertyChangedEvent("BatteryMode");
-            }
-        }
+        public ObservableCollection<String> BatteryMode { get; set; }
 
         public Advanced1ViewModel()
         {
