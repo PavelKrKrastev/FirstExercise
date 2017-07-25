@@ -2,23 +2,9 @@
 {
     class GeneralModel
     {
-        #region private variables
-        private string _name;
-        private object _tabContent;
-        #endregion
+        public string Name { get; set; }
+        public object TabContent { get; set; }
 
-        #region
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
-        public object TabContent
-        {
-            get { return _tabContent; }
-            set { _tabContent = value; }
-        }
-        #endregion
 
         public GeneralModel(string Name, object TabContent)
         {
