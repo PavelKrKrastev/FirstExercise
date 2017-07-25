@@ -18,7 +18,7 @@
 
         <StackPanel Margin="5,0">
         <Label>Select option:</Label>
-        <ListBox ItemsSource="{Binding ToolsList}">
+        <ListBox Name="lstItems" ItemsSource="{Binding ToolsList}" SelectedIndex="0">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding}" />

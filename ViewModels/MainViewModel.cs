@@ -24,24 +24,31 @@ namespace NemetschekFirstAssigment.ViewModel
         {
             AllModels = new ObservableCollection<object>
             {
+                #region General
                 new GeneralViewModel("General", new List<TabContentModel>()
                 {
                 new TabContentModel("Options", new OptionsView()),
                 new TabContentModel("Preferences", new PreferencesView()),
                 new TabContentModel("Settings", new SettingsView()),
                 }),
+                #endregion
 
+                #region Tools
                 new GeneralViewModel("Tools", new List<TabContentModel>()
                 {
                  new TabContentModel("Tools", new ToolsView())
                 }),
+                #endregion
 
+                #region Window
                 new GeneralViewModel("Window", new List<TabContentModel>()
                 {
                 new TabContentModel("View", new ViewView()),
                 new TabContentModel("Resolution", new ResolutionView() ),
                 }),
+                #endregion
 
+                #region Advanced
                 new GeneralViewModel("Advanced", new List<TabContentModel>()
                 {               
                 new TabContentModel("Advanced 1", new Advanced1View()),
@@ -49,6 +56,8 @@ namespace NemetschekFirstAssigment.ViewModel
                 new TabContentModel("Advanced 3", new Advanced3View()),
                 new TabContentModel("Advanced 4", new Advanced4View()),
                 }),
+                #endregion
+
             };
         }
     }
