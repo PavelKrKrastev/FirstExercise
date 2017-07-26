@@ -1,4 +1,5 @@
 ﻿using NemetschekFirstAssigment.ViewModels;
+using System;
 
 namespace NemetschekFirstAssigment.Views.GeneralView
 {
@@ -10,8 +11,8 @@ namespace NemetschekFirstAssigment.Views.GeneralView
 
         public OptionsViewModel()
         {
-            CheckBoxValue = true;
-            LblValue = "Options View Model";
+            CheckBoxValue = Convert.ToBoolean(Doc.Root.Element("General").Element("GeneralTab1").Attribute("CheckBoxValue").Value);
+            LblValue = Doc.Root.Element("General").Element("GeneralTab1").Attribute("LabelContent").Value;
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using NemetschekFirstAssigment.Models;
 using NemetschekFirstAssigment.Views;
+using System.Xml.Linq;
 
 namespace NemetschekFirstAssigment.ViewModel
 {
@@ -20,25 +21,23 @@ namespace NemetschekFirstAssigment.ViewModel
             }
         }
 
-        public int Index { get; set; }
-
         public MainViewModel()
         {
             AllModels = new ObservableCollection<object>
             {
                 #region General
-                new GeneralViewModel("General", new List<GeneralModel>()
+                new GeneralViewModel(Doc.Root.Element("General").Attribute("Name").Value, new List<GeneralModel>()
                 {
-                    new GeneralModel("Options", new OptionsView()),
-                    new GeneralModel("Preferences", new PreferencesView()),
-                    new GeneralModel("Settings", new SettingsView()),
+                    new GeneralModel(Doc.Root.Element("General").Element("GeneralTab1").Attribute("Name").Value, new OptionsView()),
+                    new GeneralModel(Doc.Root.Element("General").Element("GeneralTab2").Attribute("Name").Value, new PreferencesView()),
+                    new GeneralModel(Doc.Root.Element("General").Element("GeneralTab3").Attribute("Name").Value, new SettingsView()),
                 }),
                 #endregion
 
                 #region Tools
-                new GeneralViewModel("Tools", new List<GeneralModel>()
+                new GeneralViewModel(Doc.Root.Element("Tools").Attribute("Name").Value, new List<GeneralModel>()
                 {
-                    new GeneralModel("Tools", new ToolsView())
+                    new GeneralModel(Doc.Root.Element("Tools").Element("ToolsTab").Attribute("Name").Value, new ToolsView())
                 }),
                 #endregion
 
