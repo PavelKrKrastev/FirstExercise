@@ -6,7 +6,7 @@ namespace NemetschekFirstAssigment.Views.GeneralView
     public class OptionsViewModel : BaseViewModel
     {
         public bool CheckBoxValue { get; set; }
-
+      
         public string LblValue { get; set; }
 
         public OptionsViewModel()

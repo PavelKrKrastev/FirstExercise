@@ -1,6 +1,5 @@
 ﻿using NemetschekFirstAssigment.ViewModels;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Xml.Linq;
 
@@ -24,7 +23,7 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
 
             foreach (var item in comboBox1Items)
             {
-                LanguageMode.Add(item.Attribute("Content").Value);
+                LanguageMode.Add(item.Value);
             }
             #endregion
 
@@ -35,7 +34,7 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
 
             foreach (var item in comboBox2Items)
             {
-                PowerMode.Add(item.Attribute("Content").Value);
+                PowerMode.Add(item.Value);
             }
             #endregion
 
@@ -46,7 +45,7 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
 
             foreach (var item in comboBox3Items)
             {
-                BatteryMode.Add(item.Attribute("Content").Value);
+                BatteryMode.Add(item.Value);
             }
             #endregion
         }

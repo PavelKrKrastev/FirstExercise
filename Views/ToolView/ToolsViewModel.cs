@@ -1,7 +1,6 @@
 ﻿using NemetschekFirstAssigment.ViewModels;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Xml.Linq;
 
 namespace NemetschekFirstAssigment.Views.ToolView
@@ -25,7 +24,7 @@ namespace NemetschekFirstAssigment.Views.ToolView
 
             foreach(var item in items )
             {
-                ToolsList.Add(item.Attribute("Content").Value);
+                ToolsList.Add(item.Value);
             }
 
             CheckBox1Value = Convert.ToBoolean(Doc.Root.Element("Tools").Element("ToolsTab").Attribute("CheckBox1Value").Value);

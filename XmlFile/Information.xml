@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabsContent>
   <General Name = "General">
-    <GeneralTab1 Name = "Options"  CheckBoxValue = "true" LabelContent = "General ViewModel"></GeneralTab1>
-    <GeneralTab2 Name = "Preferences" CheckBoxValue = "false" LabelContent = "General ViewModel"></GeneralTab2>
-    <GeneralTab3 Name = "Settings"  CheckBoxValue = "true" LabelContent = "General ViewModel"></GeneralTab3>
+    <GeneralTab1 CheckBoxValue = "false" LabelContent = "General ViewModel">Options</GeneralTab1>
+    <GeneralTab2 CheckBoxValue = "true" LabelContent = "General ViewModel">Preferences</GeneralTab2>
+    <GeneralTab3 CheckBoxValue = "false" LabelContent = "General ViewModel">Settings</GeneralTab3>
   </General>
 
   <Tools Name = "Tools">
-    <ToolsTab Name = "Tools" CheckBox1Value = "true" CheckBox2Value = "false" CheckBox3Value = "true" RadioButtonValue = "true"></ToolsTab>
-    <ListBoxItem Content = "Wrench"></ListBoxItem>
-    <ListBoxItem Content = "Hammer"></ListBoxItem>
-    <ListBoxItem Content = "Hex Key"></ListBoxItem>
+    <ToolsTab CheckBox1Value = "true" CheckBox2Value = "false" CheckBox3Value = "true" RadioButtonValue = "true">Tools</ToolsTab>
+    <ListBoxItem>Wrench</ListBoxItem>
+    <ListBoxItem>Hammer</ListBoxItem>
+    <ListBoxItem>Hex Key</ListBoxItem>
   </Tools>
 
   <Window Name = "Window">
-    <WindowTab1 Name = "View"  CheckBoxValue = "false" LabelContent = "Window ViewModel"></WindowTab1>
-    <WindowTab2 Name = "Resolution" CheckBoxValue = "true" LabelContent = "Window ViewModel"></WindowTab2>
+    <WindowTab1 CheckBoxValue = "false" LabelContent = "Window ViewModel">View</WindowTab1>
+    <WindowTab2 CheckBoxValue = "true" LabelContent = "Window ViewModel">Resolution</WindowTab2>
   </Window>
 
   <Advanced Name = "Advanced">
 
-    <AdvancedTab1 Name = "Advanced 1"></AdvancedTab1>
+    <AdvancedTab1>Advanced 1</AdvancedTab1>
 
-    <ComboBox1Item Content = "English"></ComboBox1Item>
-    <ComboBox1Item Content = "Spanish"></ComboBox1Item>
-    <ComboBox1Item Content = "German"></ComboBox1Item>
-    <ComboBox1Item Content = "French"></ComboBox1Item>
+     <ComboBox1Item>English</ComboBox1Item>
+     <ComboBox1Item>Spanish</ComboBox1Item>
+     <ComboBox1Item>German</ComboBox1Item>
+     <ComboBox1Item>French</ComboBox1Item>
 
-    <ComboBox2Item Content = "Power Saver"></ComboBox2Item>
-    <ComboBox2Item Content = "Balanced"></ComboBox2Item>
-    <ComboBox2Item Content = "High Performance"></ComboBox2Item>
+     <ComboBox2Item>Power Saver</ComboBox2Item>
+     <ComboBox2Item>Balanced</ComboBox2Item>
+     <ComboBox2Item>High Performance</ComboBox2Item>
 
-    <ComboBox3Item Content = "Maximum battery life"></ComboBox3Item>
-    <ComboBox3Item Content = "Optimized battery health"></ComboBox3Item>
-    <ComboBox3Item Content = "Stamina"></ComboBox3Item>
+     <ComboBox3Item>Maximum battery life</ComboBox3Item>
+     <ComboBox3Item>Optimized battery health</ComboBox3Item>
+     <ComboBox3Item>Stamina</ComboBox3Item>
 
-    <AdvancedTab2 Name = "Advanced 2" LabelContent = "Advanced ViewModel" CheckBoxValue = "false"></AdvancedTab2>
-    <AdvancedTab3 Name = "Advanced 3" LabelContent = "Advanced ViewModel" CheckBoxValue = "true"></AdvancedTab3>
-    <AdvancedTab4 Name = "Advanced 4" LabelContent = "Advanced ViewModel" CheckBoxValue = "false"></AdvancedTab4>
+    <AdvancedTab2 LabelContent = "Advanced ViewModel" CheckBoxValue = "false">Advanced 2</AdvancedTab2>
+    <AdvancedTab3 LabelContent = "Advanced ViewModel" CheckBoxValue = "true">Advanced 3</AdvancedTab3>
+    <AdvancedTab4 LabelContent = "Advanced ViewModel" CheckBoxValue = "false">Advanced 4</AdvancedTab4>
   </Advanced>
 </TabsContent>
