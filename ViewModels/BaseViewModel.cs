@@ -5,9 +5,7 @@ namespace NemetschekFirstAssigment.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        private static string xmlUrl = "C://Users//Pavel Krastev//Desktop//Exc1//FirstExercise//Information.xml";
-
-        public XDocument Doc = XDocument.Load(xmlUrl);
+        public XDocument Doc = XDocument.Load(@"XmlFile\Information.xml");
 
         public event PropertyChangedEventHandler PropertyChanged;
 
