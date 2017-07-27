@@ -1,4 +1,5 @@
 ﻿using NemetschekFirstAssigment.ViewModels;
+using System;
 
 namespace NemetschekFirstAssigment.Views.WindowView
 {
@@ -11,9 +12,8 @@ namespace NemetschekFirstAssigment.Views.WindowView
 
         public ResolutionViewModel()
         {
-            CheckBoxValue = true;
-            LblValue = "Resolution View Model";
+            CheckBoxValue = Convert.ToBoolean(Doc.Root.Element("Window").Element("WindowTab2").Attribute("CheckBoxValue").Value);
+            LblValue = Doc.Root.Element("Window").Element("WindowTab2").Attribute("LabelContent").Value;
         }
-
     }
 }

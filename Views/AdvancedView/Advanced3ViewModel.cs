@@ -1,4 +1,5 @@
 ﻿using NemetschekFirstAssigment.ViewModels;
+using System;
 
 namespace NemetschekFirstAssigment.Views.AdvancedView
 {
@@ -10,8 +11,8 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
 
         public Advanced3ViewModel()
         {
-            CheckBoxValue = false;
-            LblValue = "Advanced 3 View Model";
+            CheckBoxValue = Convert.ToBoolean(Doc.Root.Element("Advanced").Element("AdvancedTab3").Attribute("CheckBoxValue").Value);
+            LblValue = Doc.Root.Element("Advanced").Element("AdvancedTab3").Attribute("LabelContent").Value;
         }
 
     }

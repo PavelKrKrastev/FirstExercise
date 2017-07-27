@@ -1,6 +1,8 @@
 ﻿using NemetschekFirstAssigment.ViewModels;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Xml.Linq;
 
 namespace NemetschekFirstAssigment.Views.AdvancedView
 {
@@ -14,9 +16,39 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
 
         public Advanced1ViewModel()
         {
-            LanguageMode = new ObservableCollection<string> { "English", "Spanish", "German", "French" };
-            PowerMode = new ObservableCollection<string> { "Power Saver", "Balanced", "High Performance" };
-            BatteryMode = new ObservableCollection<string> { "Maximum battery life", "Optimized battery health", "Stamina" };
+
+            #region Add to LanguageMode
+            var comboBox1Items = Doc.Root.Elements("Advanced").Elements("ComboBox1Item");
+
+            this.LanguageMode = new ObservableCollection<String>();
+
+            foreach (var item in comboBox1Items)
+            {
+                LanguageMode.Add(item.Attribute("Content").Value);
+            }
+            #endregion
+
+            #region Add to PowerMode
+            var comboBox2Items = Doc.Root.Elements("Advanced").Elements("ComboBox2Item");
+
+            this.PowerMode = new ObservableCollection<string>();
+
+            foreach (var item in comboBox2Items)
+            {
+                PowerMode.Add(item.Attribute("Content").Value);
+            }
+            #endregion
+
+            #region Add to BatteryMode
+            var comboBox3Items = Doc.Root.Elements("Advanced").Elements("ComboBox3Item");
+
+            this.BatteryMode = new ObservableCollection<string>();
+
+            foreach (var item in comboBox3Items)
+            {
+                BatteryMode.Add(item.Attribute("Content").Value);
+            }
+            #endregion
         }
 
     }

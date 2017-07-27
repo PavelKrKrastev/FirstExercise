@@ -42,20 +42,20 @@ namespace NemetschekFirstAssigment.ViewModel
                 #endregion
 
                 #region Window
-                new GeneralViewModel("Window", new List<GeneralModel>()
+                new GeneralViewModel(Doc.Root.Element("Window").Attribute("Name").Value, new List<GeneralModel>()
                 {
-                    new GeneralModel("View", new ViewView()),
-                    new GeneralModel("Resolution", new ResolutionView() ),
+                    new GeneralModel(Doc.Root.Element("Window").Element("WindowTab1").Attribute("Name").Value, new ViewView()),
+                    new GeneralModel(Doc.Root.Element("Window").Element("WindowTab2").Attribute("Name").Value, new ResolutionView() ),
                 }),
                 #endregion
 
                 #region Advanced
-                new GeneralViewModel("Advanced", new List<GeneralModel>()
+                new GeneralViewModel(Doc.Root.Element("Advanced").Attribute("Name").Value, new List<GeneralModel>()
                 {               
-                    new GeneralModel("Advanced 1", new Advanced1View()),
-                    new GeneralModel("Advanced 2", new Advanced2View()),
-                    new GeneralModel("Advanced 3", new Advanced3View()),
-                    new GeneralModel("Advanced 4", new Advanced4View()),
+                    new GeneralModel(Doc.Root.Element("Advanced").Element("AdvancedTab1").Attribute("Name").Value, new Advanced1View()),
+                    new GeneralModel(Doc.Root.Element("Advanced").Element("AdvancedTab2").Attribute("Name").Value, new Advanced2View()),
+                    new GeneralModel(Doc.Root.Element("Advanced").Element("AdvancedTab3").Attribute("Name").Value, new Advanced3View()),
+                    new GeneralModel(Doc.Root.Element("Advanced").Element("AdvancedTab4").Attribute("Name").Value, new Advanced4View()),
                 }),
                 #endregion
 

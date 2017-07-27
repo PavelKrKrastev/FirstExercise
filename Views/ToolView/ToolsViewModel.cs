@@ -19,10 +19,14 @@ namespace NemetschekFirstAssigment.Views.ToolView
 
         public ToolsViewModel()
         {
+            var items = Doc.Root.Elements("Tools").Elements("ListBoxItem");
+
             this.ToolsList = new List<String>();
-            ToolsList.Add(Doc.Root.Element("Tools").Element("ListBoxItem1").Attribute("Content").Value);
-            ToolsList.Add(Doc.Root.Element("Tools").Element("ListBoxItem2").Attribute("Content").Value);
-            ToolsList.Add(Doc.Root.Element("Tools").Element("ListBoxItem3").Attribute("Content").Value);
+
+            foreach(var item in items )
+            {
+                ToolsList.Add(item.Attribute("Content").Value);
+            }
 
             CheckBox1Value = Convert.ToBoolean(Doc.Root.Element("Tools").Element("ToolsTab").Attribute("CheckBox1Value").Value);
             CheckBox2Value = Convert.ToBoolean(Doc.Root.Element("Tools").Element("ToolsTab").Attribute("CheckBox2Value").Value);
