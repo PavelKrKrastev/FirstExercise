@@ -15,8 +15,8 @@
 
         <Grid>
             <DockPanel>
-                <Label Grid.Column="0" DockPanel.Dock="Top">Select Category:</Label>
-                <ListBox Name="lbCategory" Margin="5,2,5,5" HorizontalContentAlignment="Center" DockPanel.Dock="Bottom" SelectedIndex="0" ItemsSource="{Binding AllModels}">
+                <Label Grid.Column="0" DockPanel.Dock="Top">Select category:</Label>
+                <ListBox Name="lbCategory" Margin="5,2,5,5" HorizontalContentAlignment="Center" DockPanel.Dock="Top" SelectedIndex="0" ItemsSource="{Binding AllModels}">
 
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -25,11 +25,27 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
             </DockPanel>
+            
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock FontStyle="Italic" FontSize="12" Text="{Binding ProblemLabel}">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=lbCategory, Path=Items.Count}" Value="0">
+                                    <Setter Property="Visibility" Value="Visible" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </StackPanel>
+            
         </Grid>
 
         <Grid Grid.Column="1" Margin="0,0,5,0">
             <DockPanel>
-                <Label Grid.Column="0" DockPanel.Dock="Top">Select Category:</Label>
+                <Label Grid.Column="0" DockPanel.Dock="Top">Select Subcategory:</Label>
                 <TabControl Margin="0,0,0,5" SelectedIndex="{Binding ElementName=lbCategory, Path=SelectedItem.Subcategories[0]}" ItemsSource="{Binding ElementName=lbCategory, Path=SelectedItem.Subcategories}" Grid.Column="1">
 
                     <TabControl.Resources>

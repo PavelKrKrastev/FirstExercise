@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using NemetschekFirstAssigment.Models;
 using NemetschekFirstAssigment.Views;
 using System.Xml.Linq;
+using System;
 
 namespace NemetschekFirstAssigment.ViewModel
 {
@@ -21,9 +22,13 @@ namespace NemetschekFirstAssigment.ViewModel
             }
         }
 
+        public String ProblemLabel { get; set; }
+
         public MainViewModel()
         {
-            AllModels = new ObservableCollection<object>
+            try
+            {
+                AllModels = new ObservableCollection<object>
             {
                 #region General
                 new GeneralViewModel(Doc.Root.Element("General").Attribute("Name").Value, new List<GeneralModel>()
@@ -60,6 +65,12 @@ namespace NemetschekFirstAssigment.ViewModel
                 #endregion
 
             };
+            }
+
+            catch(NullReferenceException)
+            {
+                ProblemLabel = "File not loaded successfully";
+            }
         }
     }
 }
