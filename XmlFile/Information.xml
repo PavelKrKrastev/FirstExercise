@@ -11,6 +11,7 @@
     <ListBoxItem>Wrench</ListBoxItem>
     <ListBoxItem>Hammer</ListBoxItem>
     <ListBoxItem>Hex Key</ListBoxItem>
+    <ListBoxItem>Torque Wrench</ListBoxItem>
   </Tools>
 
   <Window Name = "Window">

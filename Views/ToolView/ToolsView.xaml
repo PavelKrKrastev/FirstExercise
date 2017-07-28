@@ -16,16 +16,16 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <StackPanel Margin="5,0">
-        <Label>Select option:</Label>
-        <ListBox Name="lstItems" ItemsSource="{Binding ToolsList}" SelectedIndex="0">
+        <DockPanel Margin="5,0">
+        <Label DockPanel.Dock="Top">Select option:</Label>
+        <ListBox Name="lstItems" ItemsSource="{Binding ToolsList}" SelectedIndex="0" DockPanel.Dock="Bottom">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding}" />
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        </StackPanel>
+        </DockPanel>
 
         <StackPanel Grid.Column="1" Margin="5,0">
             <Label>Select option:</Label>

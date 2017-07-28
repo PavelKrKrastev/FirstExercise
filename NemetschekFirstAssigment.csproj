@@ -183,6 +183,7 @@
   <ItemGroup>
     <EmbeddedResource Include="XmlFile\Information.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
