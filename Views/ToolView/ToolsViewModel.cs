@@ -18,7 +18,7 @@ namespace NemetschekFirstAssigment.Views.ToolView
 
         public ToolsViewModel()
         {
-            var items = Doc.Root.Elements("Tools").Elements("ListBoxItem");
+            var items = Doc.Descendants("ListBoxItem");
 
             this.ToolsList = new List<String>();
 

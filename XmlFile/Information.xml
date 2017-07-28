@@ -28,12 +28,12 @@
      <ComboBox1Item>German</ComboBox1Item>
      <ComboBox1Item>French</ComboBox1Item>
 
-     <ComboBox2Item>Power Saver</ComboBox2Item>
      <ComboBox2Item>Balanced</ComboBox2Item>
+     <ComboBox2Item>Power Saver</ComboBox2Item>
      <ComboBox2Item>High Performance</ComboBox2Item>
 
-     <ComboBox3Item>Maximum battery life</ComboBox3Item>
      <ComboBox3Item>Optimized battery health</ComboBox3Item>
+     <ComboBox3Item>Maximum battery life</ComboBox3Item>
      <ComboBox3Item>Stamina</ComboBox3Item>
 
     <AdvancedTab2 LabelContent = "Advanced ViewModel" CheckBoxValue = "false">Advanced 2</AdvancedTab2>

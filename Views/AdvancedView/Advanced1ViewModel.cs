@@ -17,7 +17,7 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
         {
 
             #region Add to LanguageMode
-            var comboBox1Items = Doc.Root.Elements("Advanced").Elements("ComboBox1Item");
+            var comboBox1Items = Doc.Descendants("ComboBox1Item");
 
             this.LanguageMode = new ObservableCollection<String>();
 
@@ -28,7 +28,7 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
             #endregion
 
             #region Add to PowerMode
-            var comboBox2Items = Doc.Root.Elements("Advanced").Elements("ComboBox2Item");
+            var comboBox2Items = Doc.Descendants("ComboBox2Item");
 
             this.PowerMode = new ObservableCollection<string>();
 
@@ -39,7 +39,7 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
             #endregion
 
             #region Add to BatteryMode
-            var comboBox3Items = Doc.Root.Elements("Advanced").Elements("ComboBox3Item");
+            var comboBox3Items = Doc.Descendants("ComboBox3Item");
 
             this.BatteryMode = new ObservableCollection<string>();
 
