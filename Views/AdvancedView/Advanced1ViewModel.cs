@@ -1,7 +1,6 @@
 ﻿using NemetschekFirstAssigment.ViewModels;
 using System;
 using System.Collections.ObjectModel;
-using System.Xml.Linq;
 
 namespace NemetschekFirstAssigment.Views.AdvancedView
 {
@@ -49,6 +48,6 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
             }
             #endregion
         }
-
+       
     }
 }
