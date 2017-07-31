@@ -48,6 +48,5 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
             }
             #endregion
         }
-       
     }
 }

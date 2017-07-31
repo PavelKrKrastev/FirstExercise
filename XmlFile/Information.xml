@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabsContent>
+
+<WindowContent>
   <General Name = "General">
     <GeneralTab1 CheckBoxValue = "false" LabelContent = "General ViewModel">Options</GeneralTab1>
     <GeneralTab2 CheckBoxValue = "true" LabelContent = "General ViewModel">Preferences</GeneralTab2>
@@ -40,4 +41,4 @@
     <AdvancedTab3 LabelContent = "Advanced ViewModel" CheckBoxValue = "true">Advanced 3</AdvancedTab3>
     <AdvancedTab4 LabelContent = "Advanced ViewModel" CheckBoxValue = "false">Advanced 4</AdvancedTab4>
   </Advanced>
-</TabsContent>
+</WindowContent>
