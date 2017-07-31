@@ -1,7 +1,6 @@
 ﻿using NemetschekFirstAssigment.ViewModels;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using NemetschekFirstAssigment.Models;
 using NemetschekFirstAssigment.Views;
 using System;
 
@@ -21,8 +20,10 @@ namespace NemetschekFirstAssigment.ViewModel
             }
         }
 
-        public String ProblemLabel { get; set; }
-
+        public string ProblemLabel
+        {
+            get { return "File not loaded correctly"; }
+        }
         public MainViewModel()
         {
             try
@@ -30,45 +31,45 @@ namespace NemetschekFirstAssigment.ViewModel
                 AllModels = new ObservableCollection<object>
             {
                 #region General
-                new GeneralViewModel(Doc.Root.Element("General").Attribute("Name").Value, new List<GeneralModel>()
+                new GeneralViewModel(GeneralName, new List<object>()
                 {
-                    new GeneralModel(Doc.Root.Element("General").Element("GeneralTab1").Value, new OptionsView()),
-                    new GeneralModel(Doc.Root.Element("General").Element("GeneralTab2").Value, new PreferencesView()),
-                    new GeneralModel(Doc.Root.Element("General").Element("GeneralTab3").Value, new SettingsView()),
+                    new GeneralViewModel(GeneralTab1Name, new OptionsView()),
+                    new GeneralViewModel(GeneralTab2Name, new PreferencesView()),
+                    new GeneralViewModel(GeneralTab3Name, new SettingsView()),
                 }),
                 #endregion
 
                 #region Tools
-                new GeneralViewModel(Doc.Root.Element("Tools").Attribute("Name").Value, new List<GeneralModel>()
+                new GeneralViewModel(ToolsName, new List<object>()
                 {
-                    new GeneralModel(Doc.Root.Element("Tools").Element("ToolsTab").Value, new ToolsView())
+                    new GeneralViewModel(ToolsTabName, new ToolsView())
                 }),
                 #endregion
 
                 #region Window
-                new GeneralViewModel(Doc.Root.Element("Window").Attribute("Name").Value, new List<GeneralModel>()
+                new GeneralViewModel(WindowName, new List<object>()
                 {
-                    new GeneralModel(Doc.Root.Element("Window").Element("WindowTab1").Value, new ViewView()),
-                    new GeneralModel(Doc.Root.Element("Window").Element("WindowTab2").Value, new ResolutionView() ),
+                    new GeneralViewModel(WindowTab1Name, new ViewView()),
+                    new GeneralViewModel(WindowTab2Name, new ResolutionView() ),
                 }),
                 #endregion
 
                 #region Advanced
-                new GeneralViewModel(Doc.Root.Element("Advanced").Attribute("Name").Value, new List<GeneralModel>()
+                new GeneralViewModel(AdvancedName, new List<object>()
                 {               
-                    new GeneralModel(Doc.Root.Element("Advanced").Element("AdvancedTab1").Value, new Advanced1View()),
-                    new GeneralModel(Doc.Root.Element("Advanced").Element("AdvancedTab2").Value, new Advanced2View()),
-                    new GeneralModel(Doc.Root.Element("Advanced").Element("AdvancedTab3").Value, new Advanced3View()),
-                    new GeneralModel(Doc.Root.Element("Advanced").Element("AdvancedTab4").Value, new Advanced4View()),
+                    new GeneralViewModel(AdvancedTab1Name, new Advanced1View()),
+                    new GeneralViewModel(AdvancedTab2Name, new Advanced2View()),
+                    new GeneralViewModel(AdvancedTab3Name, new Advanced3View()),
+                    new GeneralViewModel(AdvancedTab4Name, new Advanced4View()),
                 }),
                 #endregion
 
             };
             }
 
-            catch(NullReferenceException)
+            catch (NullReferenceException)
             {
-                ProblemLabel = "File not loaded correctly";
+
             }
         }
     }
