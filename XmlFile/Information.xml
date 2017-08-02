@@ -1,44 +1,42 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
-<WindowContent>
-  <General Name = "General">
-    <GeneralTab1 CheckBoxValue = "false" LabelContent = "General ViewModel">Options</GeneralTab1>
-    <GeneralTab2 CheckBoxValue = "true" LabelContent = "General ViewModel">Preferences</GeneralTab2>
-    <GeneralTab3 CheckBoxValue = "false" LabelContent = "General ViewModel">Settings</GeneralTab3>
-  </General>
-
-  <Tools Name = "Tools">
-    <ToolsTab CheckBox1Value = "true" CheckBox2Value = "false" CheckBox3Value = "true" RadioButtonValue = "true">Tools</ToolsTab>
-    <ListBoxItem>Wrench</ListBoxItem>
-    <ListBoxItem>Hammer</ListBoxItem>
-    <ListBoxItem>Hex Key</ListBoxItem>
-    <ListBoxItem>Torque Wrench</ListBoxItem>
-  </Tools>
-
-  <Window Name = "Window">
-    <WindowTab1 CheckBoxValue = "false" LabelContent = "Window ViewModel">View</WindowTab1>
-    <WindowTab2 CheckBoxValue = "true" LabelContent = "Window ViewModel">Resolution</WindowTab2>
-  </Window>
-
-  <Advanced Name = "Advanced">
-
-    <AdvancedTab1>Advanced 1</AdvancedTab1>
-
-     <ComboBox1Item>English</ComboBox1Item>
-     <ComboBox1Item>Spanish</ComboBox1Item>
-     <ComboBox1Item>German</ComboBox1Item>
-     <ComboBox1Item>French</ComboBox1Item>
-
-     <ComboBox2Item>Balanced</ComboBox2Item>
-     <ComboBox2Item>Power Saver</ComboBox2Item>
-     <ComboBox2Item>High Performance</ComboBox2Item>
-
-     <ComboBox3Item>Optimized battery health</ComboBox3Item>
-     <ComboBox3Item>Maximum battery life</ComboBox3Item>
-     <ComboBox3Item>Stamina</ComboBox3Item>
-
-    <AdvancedTab2 LabelContent = "Advanced ViewModel" CheckBoxValue = "false">Advanced 2</AdvancedTab2>
-    <AdvancedTab3 LabelContent = "Advanced ViewModel" CheckBoxValue = "true">Advanced 3</AdvancedTab3>
-    <AdvancedTab4 LabelContent = "Advanced ViewModel" CheckBoxValue = "false">Advanced 4</AdvancedTab4>
-  </Advanced>
+﻿<?xml version="1.0"?>
+<WindowContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GeneralTab1>Options</GeneralTab1>
+  <GeneralTab2>Preferences</GeneralTab2>
+  <GeneralTab3>Settings</GeneralTab3>
+  <GeneralLabel>General ViewModel</GeneralLabel>
+  <GeneralCheckBox1>true</GeneralCheckBox1>
+  <GeneralCheckBox2>false</GeneralCheckBox2>
+  <GeneralCheckBox3>true</GeneralCheckBox3>
+  <GeneralName>General</GeneralName>
+  <ToolsTab>Tools</ToolsTab>
+  <ToolsCheckBox1>true</ToolsCheckBox1>
+  <ToolsCheckBox2>false</ToolsCheckBox2>
+  <ToolsCheckBox3>true</ToolsCheckBox3>
+  <ToolsRadioButton>true</ToolsRadioButton>
+  <ToolsListBoxItem1>Wrench</ToolsListBoxItem1>
+  <ToolsListBoxItem2>Hammer</ToolsListBoxItem2>
+  <ToolsListBoxItem3>Hex Key</ToolsListBoxItem3>
+  <ToolsListBoxItem4>Torque Wrench</ToolsListBoxItem4>
+  <ToolsName>Tools</ToolsName>
+  <Windowlabel>Window ViewModel</Windowlabel>
+  <WindowTab1>View</WindowTab1>
+  <WindowTab2>Resolution</WindowTab2>
+  <WindowCheckBox1>true</WindowCheckBox1>
+  <WindowCheckBox2>false</WindowCheckBox2>
+  <WindowName>Window</WindowName>
+  <AdvancedLabel>Advanced ViewModel</AdvancedLabel>
+  <AdvancedTab1>Advanced 1</AdvancedTab1>
+  <AdvancedTab2>Advanced 2</AdvancedTab2>
+  <AdvancedTab3>Advanced 3</AdvancedTab3>
+  <AdvancedTab4>Advanced 4</AdvancedTab4>
+  <AdvancedCheckBox2>true</AdvancedCheckBox2>
+  <AdvancedCheckBox3>false</AdvancedCheckBox3>
+  <AdvancedCheckBox4>true</AdvancedCheckBox4>
+  <AdvancedComboBox1Item1>English</AdvancedComboBox1Item1>
+  <AdvancedComboBox1Item2>German</AdvancedComboBox1Item2>
+  <AdvancedComboBox2Item1>Power Saver</AdvancedComboBox2Item1>
+  <AdvancedComboBox2Item2>High Performance</AdvancedComboBox2Item2>
+  <AdvancedComboBox3Item1>Normal</AdvancedComboBox3Item1>
+  <AdvancedComboBox3Item2>Stamina</AdvancedComboBox3Item2>
+  <AdvancedName>Advanced</AdvancedName>
 </WindowContent>

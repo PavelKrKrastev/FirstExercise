@@ -8,7 +8,7 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid HorizontalAlignment="Center">
         <StackPanel>
-            <CheckBox Margin="5" IsChecked="{Binding CheckBoxValue}">Binding to View Model </CheckBox>
+            <CheckBox Margin="5" IsChecked="{Binding CheckBoxValue}">Settings ViewModel Binding</CheckBox>
             <Label Content="{Binding LblValue}" Margin="5"/>
         </StackPanel>
     </Grid>

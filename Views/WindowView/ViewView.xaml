@@ -9,7 +9,7 @@
 
     <Grid HorizontalAlignment="Center">
         <StackPanel>
-            <CheckBox Margin="5" IsChecked="{Binding CheckBoxValue}">Options View Binding</CheckBox>
+            <CheckBox Margin="5" IsChecked="{Binding CheckBoxValue}">View ViewModel Binding</CheckBox>
             <Label Content="{Binding LblValue}" Margin="5"/>
         </StackPanel>
     </Grid>

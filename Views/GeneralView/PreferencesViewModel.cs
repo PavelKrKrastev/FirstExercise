@@ -1,9 +1,8 @@
-﻿using NemetschekFirstAssigment.ViewModels;
-using System;
+﻿using NemetschekFirstAssigment.ViewModel;
 
 namespace NemetschekFirstAssigment.Views.GeneralView
 {
-    class PreferencesViewModel : BaseViewModel
+    class PreferencesViewModel : GeneralViewModel
     {
         public bool CheckBoxValue { get; set; }
 
@@ -11,8 +10,8 @@ namespace NemetschekFirstAssigment.Views.GeneralView
 
         public PreferencesViewModel()
         {
-            CheckBoxValue = Convert.ToBoolean(Doc.Root.Element("General").Element("GeneralTab2").Attribute("CheckBoxValue").Value);
-            LblValue = Doc.Root.Element("General").Element("GeneralTab2").Attribute("LabelContent").Value;
+            CheckBoxValue = GeneralCheckBox2;
+            LblValue = GeneralLabel;
         }
     }
 }

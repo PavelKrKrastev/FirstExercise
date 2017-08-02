@@ -1,9 +1,8 @@
-﻿using NemetschekFirstAssigment.ViewModels;
-using System;
+﻿using NemetschekFirstAssigment.ViewModel;
 
 namespace NemetschekFirstAssigment.Views.AdvancedView
 {
-    class Advanced2ViewModel : BaseViewModel
+    class Advanced2ViewModel : GeneralViewModel
     {
         public bool CheckBoxValue { get; set; }
 
@@ -11,8 +10,8 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
 
         public Advanced2ViewModel()
         {
-            CheckBoxValue = Convert.ToBoolean(Doc.Root.Element("Advanced").Element("AdvancedTab2").Attribute("CheckBoxValue").Value);
-            LblValue = Doc.Root.Element("Advanced").Element("AdvancedTab2").Attribute("LabelContent").Value;
+            CheckBoxValue = AdvancedCheckBox2;
+            LblValue = AdvancedLabel;
         }
 
     }

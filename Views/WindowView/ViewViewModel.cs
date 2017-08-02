@@ -1,9 +1,8 @@
-﻿using NemetschekFirstAssigment.ViewModels;
-using System;
+﻿using NemetschekFirstAssigment.ViewModel;
 
 namespace NemetschekFirstAssigment.Views.WindowView
 {
-    class ViewViewModel : BaseViewModel
+    class ViewViewModel : GeneralViewModel
     {
         public bool CheckBoxValue { get; set; }
 
@@ -11,8 +10,8 @@ namespace NemetschekFirstAssigment.Views.WindowView
 
         public ViewViewModel()
         {
-            CheckBoxValue = Convert.ToBoolean(Doc.Root.Element("Window").Element("WindowTab1").Attribute("CheckBoxValue").Value);
-            LblValue = Doc.Root.Element("Window").Element("WindowTab1").Attribute("LabelContent").Value;
+            CheckBoxValue = WindowCheckBox1;
+            LblValue = WindowLabel;
         }
 
     }

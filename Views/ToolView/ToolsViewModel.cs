@@ -1,11 +1,10 @@
-﻿using NemetschekFirstAssigment.ViewModels;
+﻿using NemetschekFirstAssigment.ViewModel;
 using System;
 using System.Collections.Generic;
-using System.Xml.Linq;
 
 namespace NemetschekFirstAssigment.Views.ToolView
 {
-    class ToolsViewModel : BaseViewModel
+    class ToolsViewModel : GeneralViewModel
     {
         public bool CheckBox1Value { get; set; }
         public bool CheckBox2Value { get; set; }
@@ -18,20 +17,13 @@ namespace NemetschekFirstAssigment.Views.ToolView
 
         public ToolsViewModel()
         {
-            var items = Doc.Descendants("ListBoxItem");
+            CheckBox1Value = ToolsCheckBox1;
+            CheckBox2Value = ToolsCheckBox2;
+            CheckBox3Value = ToolsCheckBox3;
 
-            this.ToolsList = new List<String>();
+            RadioButtonValue = ToolsRadioButton;
 
-            foreach(var item in items )
-            {
-                ToolsList.Add(item.Value);
-            }
-
-            CheckBox1Value = Convert.ToBoolean(Doc.Root.Element("Tools").Element("ToolsTab").Attribute("CheckBox1Value").Value);
-            CheckBox2Value = Convert.ToBoolean(Doc.Root.Element("Tools").Element("ToolsTab").Attribute("CheckBox2Value").Value);
-            CheckBox3Value = Convert.ToBoolean(Doc.Root.Element("Tools").Element("ToolsTab").Attribute("CheckBox3Value").Value);
-
-            RadioButtonValue = Convert.ToBoolean(Doc.Root.Element("Tools").Element("ToolsTab").Attribute("RadioButtonValue").Value);
+            ToolsList = new List<string> {ToolsListBox1, ToolsListBox2, ToolsListBox3, ToolsListBox4 };
         }
     }
 }
