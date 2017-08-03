@@ -7,13 +7,13 @@ namespace NemetschekFirstAssigment.Views.WindowView
         public bool WindowCheckBox1
         {
             get { return gModel.WindowCheckBox1; }
-            set { WindowCheckBox1 = gModel.WindowCheckBox1; RaisePropertyChangedEvent("WindowCheckBox1"); }
+            set { gModel.WindowCheckBox1 = value; RaisePropertyChangedEvent("WindowCheckBox1"); }
         }
 
         public string WindowLabel
         {
             get { return gModel.WindowLabel; }
-            set { WindowLabel = gModel.WindowLabel; RaisePropertyChangedEvent("WindowLabel"); }
+            set { gModel.WindowLabel = value; RaisePropertyChangedEvent("WindowLabel"); }
         }
     }
 }

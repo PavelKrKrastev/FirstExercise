@@ -147,7 +147,7 @@ namespace NemetschekFirstAssigment.ViewModel
             using (FileStream stream = new FileStream(fileName, FileMode.Create))
             {
                 XmlSerializer XML = new XmlSerializer(typeof(GeneralModel));
-                XML.Serialize(stream,this.gModel);
+                XML.Serialize(stream,this);
             }
         }
     }

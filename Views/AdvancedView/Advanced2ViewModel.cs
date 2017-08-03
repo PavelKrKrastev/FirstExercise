@@ -7,13 +7,13 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
         public bool AdvancedCheckBox2
         {
             get { return gModel.AdvancedCheckBox2; }
-            set { AdvancedCheckBox2 = gModel.AdvancedCheckBox2; RaisePropertyChangedEvent("AdvancedCheckBox2"); }
+            set { gModel.AdvancedCheckBox2 = value; RaisePropertyChangedEvent("AdvancedCheckBox2"); }
         }
 
         public string AdvancedLabel
         {
             get { return gModel.AdvancedLabel; }
-            set { AdvancedLabel = gModel.AdvancedLabel; RaisePropertyChangedEvent("AdvancedLabel"); }
+            set { gModel.AdvancedLabel = value; RaisePropertyChangedEvent("AdvancedLabel"); }
         }
     }
 }
