@@ -18,7 +18,7 @@
 
         <DockPanel Margin="5,0">
         <Label DockPanel.Dock="Top">Select option:</Label>
-        <ListBox Name="lstItems" ItemsSource="{Binding ToolsList}" SelectedIndex="0" DockPanel.Dock="Bottom">
+        <ListBox Name="lstItems" ItemsSource="{Binding ToolsList}" DockPanel.Dock="Bottom">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding}" />

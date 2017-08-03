@@ -1,10 +1,10 @@
-﻿<?xml version="1.0"?>
-<WindowContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WindowContent>
   <GeneralTab1>Options</GeneralTab1>
   <GeneralTab2>Preferences</GeneralTab2>
   <GeneralTab3>Settings</GeneralTab3>
   <GeneralLabel>General ViewModel</GeneralLabel>
-  <GeneralCheckBox1>true</GeneralCheckBox1>
+  <GeneralCheckBox1>false</GeneralCheckBox1>
   <GeneralCheckBox2>false</GeneralCheckBox2>
   <GeneralCheckBox3>true</GeneralCheckBox3>
   <GeneralName>General</GeneralName>

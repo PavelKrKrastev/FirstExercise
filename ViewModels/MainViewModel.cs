@@ -2,10 +2,13 @@
 using System.Collections.ObjectModel;
 using NemetschekFirstAssigment.Views;
 using System;
+using System.Windows.Input;
+using NemetschekFirstAssigment.ViewModels;
+using NemetschekFirstAssigment.Models;
 
 namespace NemetschekFirstAssigment.ViewModel
 {
-    class MainViewModel : GeneralViewModel
+    public class MainViewModel : GeneralViewModel
     {
         private ObservableCollection<object> _allModels;
 
@@ -71,6 +74,27 @@ namespace NemetschekFirstAssigment.ViewModel
             {
 
             }
+        }
+
+        #region Command for window closed
+        private ICommand closeWindowCommand;
+
+        public ICommand CloseWindowCommand
+        {
+            get
+            {
+                if (closeWindowCommand == null)
+                {
+                    closeWindowCommand = new BaseViewModel(param => this.CloseWindow(), null);
+                }
+                return closeWindowCommand;
+            }
+        }
+        #endregion
+
+        private void CloseWindow()
+        {
+            GeneralViewModel.SaveXml(gModel);
         }
     }
 }
