@@ -4,14 +4,16 @@ namespace NemetschekFirstAssigment.Views.GeneralView
 {
     class PreferencesViewModel : GeneralViewModel
     {
-        public bool CheckBoxValue { get; set; }
-
-        public string LblValue { get; set; }
-
-        public PreferencesViewModel()
+        public bool GeneralCheckBox2
         {
-            CheckBoxValue = GeneralCheckBox2;
-            LblValue = GeneralLabel;
+            get { return gModel.GeneralCheckBox2; }
+            set { GeneralCheckBox2 = gModel.GeneralCheckBox2; RaisePropertyChangedEvent("GeneralCheckBox2"); }
+        }
+
+        public string GeneralLabel
+        {
+            get { return gModel.GeneralLabel; }
+            set { GeneralLabel = gModel.GeneralLabel; RaisePropertyChangedEvent("GeneralLabel"); }
         }
     }
 }

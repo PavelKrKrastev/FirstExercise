@@ -4,15 +4,16 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
 {
     class Advanced2ViewModel : GeneralViewModel
     {
-        public bool CheckBoxValue { get; set; }
-
-        public string LblValue { get; set; }
-
-        public Advanced2ViewModel()
+        public bool AdvancedCheckBox2
         {
-            CheckBoxValue = AdvancedCheckBox2;
-            LblValue = AdvancedLabel;
+            get { return gModel.AdvancedCheckBox2; }
+            set { AdvancedCheckBox2 = gModel.AdvancedCheckBox2; RaisePropertyChangedEvent("AdvancedCheckBox2"); }
         }
 
+        public string AdvancedLabel
+        {
+            get { return gModel.AdvancedLabel; }
+            set { AdvancedLabel = gModel.AdvancedLabel; RaisePropertyChangedEvent("AdvancedLabel"); }
+        }
     }
 }

@@ -8,8 +8,8 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid HorizontalAlignment="Center">
         <StackPanel>
-            <CheckBox Margin="5" IsChecked="{Binding CheckBoxValue}">Options View Binding</CheckBox>
-            <Label Content="{Binding LblValue}" Margin="5"/>
+            <CheckBox Margin="5" IsChecked="{Binding AdvancedCheckBox3}">Options View Binding</CheckBox>
+            <Label Content="{Binding AdvancedLabel}" Margin="5"/>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -8,8 +8,8 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid HorizontalAlignment="Center">
         <StackPanel>
-            <CheckBox Margin="5" IsChecked="{Binding CheckBoxValue}">Resolution ViewModel Binding</CheckBox>
-            <Label Content="{Binding LblValue}" Margin="5"/>
+            <CheckBox Margin="5" IsChecked="{Binding WindowCheckBox2}">Resolution ViewModel Binding</CheckBox>
+            <Label Content="{Binding WindowLabel}" Margin="5"/>
         </StackPanel>
     </Grid>
 </UserControl>

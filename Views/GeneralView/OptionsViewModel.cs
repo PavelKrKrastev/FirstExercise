@@ -1,17 +1,20 @@
-﻿using NemetschekFirstAssigment.ViewModel;
+﻿using NemetschekFirstAssigment.Models;
+using NemetschekFirstAssigment.ViewModel;
 
 namespace NemetschekFirstAssigment.Views.GeneralView
 {
     public class OptionsViewModel : GeneralViewModel
     {
-        public bool CheckBoxValue { get; set; }
-      
-        public string LblValue { get; set; }
-
-        public OptionsViewModel()
+        public bool GeneralCheckBox1
         {
-            CheckBoxValue = GeneralCheckBox1;
-            LblValue = GeneralLabel;
+            get { return gModel.GeneralCheckBox1; }
+            set { GeneralCheckBox1 = gModel.GeneralCheckBox1; RaisePropertyChangedEvent("GeneralCheckBox1"); }
+        }
+
+        public string GeneralLabel
+        {
+            get { return gModel.GeneralLabel; }
+            set { GeneralLabel = gModel.GeneralLabel; RaisePropertyChangedEvent("GeneralLabel"); }
         }
     }
 }

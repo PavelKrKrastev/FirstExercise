@@ -29,16 +29,16 @@
 
         <StackPanel Grid.Column="1" Margin="5,0">
             <Label>Select option:</Label>
-            <CheckBox IsChecked="{Binding CheckBox1Value}" Content="Bind to a ViewModel" Margin="5,0,5,5" ></CheckBox>
-            <CheckBox IsChecked="{Binding CheckBox2Value}" Content="Bind to a ViewModel" Margin="5" ></CheckBox>
-            <CheckBox IsChecked="{Binding CheckBox3Value}" Content="Bind to a ViewModel" Margin="5" ></CheckBox>
+            <CheckBox IsChecked="{Binding ToolsCheckBox1}" Content="Bind to a ViewModel" Margin="5,0,5,5" ></CheckBox>
+            <CheckBox IsChecked="{Binding ToolsCheckBox2}" Content="Bind to a ViewModel" Margin="5" ></CheckBox>
+            <CheckBox IsChecked="{Binding ToolsCheckBox3}" Content="Bind to a ViewModel" Margin="5" ></CheckBox>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0">
             <Label>Select option:</Label>
             <RadioButton GroupName="ToolsGroup" Margin="5,0,5,5">Yes</RadioButton>
             <RadioButton GroupName="ToolsGroup" Margin="5">No</RadioButton>
-            <RadioButton GroupName="ToolsGroup" IsChecked="{Binding RadioButtonValue}" Margin="5">Maybe</RadioButton>
+            <RadioButton GroupName="ToolsGroup" IsChecked="{Binding ToolsRadioButton}" Margin="5">Maybe</RadioButton>
         </StackPanel>
         
     </Grid>

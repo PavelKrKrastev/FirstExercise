@@ -4,15 +4,16 @@ namespace NemetschekFirstAssigment.Views.WindowView
 {
     class ViewViewModel : GeneralViewModel
     {
-        public bool CheckBoxValue { get; set; }
-
-        public string LblValue { get; set; }
-
-        public ViewViewModel()
+        public bool WindowCheckBox1
         {
-            CheckBoxValue = WindowCheckBox1;
-            LblValue = WindowLabel;
+            get { return gModel.WindowCheckBox1; }
+            set { WindowCheckBox1 = gModel.WindowCheckBox1; RaisePropertyChangedEvent("WindowCheckBox1"); }
         }
 
+        public string WindowLabel
+        {
+            get { return gModel.WindowLabel; }
+            set { WindowLabel = gModel.WindowLabel; RaisePropertyChangedEvent("WindowLabel"); }
+        }
     }
 }

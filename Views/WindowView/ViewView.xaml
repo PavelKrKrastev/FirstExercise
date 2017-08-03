@@ -9,8 +9,8 @@
 
     <Grid HorizontalAlignment="Center">
         <StackPanel>
-            <CheckBox Margin="5" IsChecked="{Binding CheckBoxValue}">View ViewModel Binding</CheckBox>
-            <Label Content="{Binding LblValue}" Margin="5"/>
+            <CheckBox Margin="5" IsChecked="{Binding WindowCheckBox1}">View ViewModel Binding</CheckBox>
+            <Label Content="{Binding WindowLabel}" Margin="5"/>
         </StackPanel>
     </Grid>
 </UserControl>

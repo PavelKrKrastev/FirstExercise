@@ -5,14 +5,16 @@ namespace NemetschekFirstAssigment.Views.WindowView
     class ResolutionViewModel : GeneralViewModel
     {
 
-        public bool CheckBoxValue { get; set; }
-
-        public string LblValue { get; set; }
-
-        public ResolutionViewModel()
+        public bool WindowCheckBox1
         {
-            CheckBoxValue = WindowCheckBox2;
-            LblValue = WindowLabel;
+            get { return gModel.WindowCheckBox2; }
+            set { WindowCheckBox1 = gModel.WindowCheckBox1; RaisePropertyChangedEvent("WindowCheckBox1"); }
+        }
+
+        public string WindowLabel
+        {
+            get { return gModel.WindowLabel; }
+            set { WindowLabel = gModel.WindowLabel; RaisePropertyChangedEvent("WindowLabel"); }
         }
     }
 }
