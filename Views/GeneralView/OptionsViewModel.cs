@@ -1,5 +1,4 @@
-﻿using NemetschekFirstAssigment.Models;
-using NemetschekFirstAssigment.ViewModel;
+﻿using NemetschekFirstAssigment.ViewModel;
 
 namespace NemetschekFirstAssigment.Views.GeneralView
 {

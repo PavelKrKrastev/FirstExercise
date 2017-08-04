@@ -183,7 +183,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="XmlFile\Information.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using NemetschekFirstAssigment.Views;
-using System;
 using System.Windows.Input;
 using NemetschekFirstAssigment.ViewModels;
-using NemetschekFirstAssigment.Models;
 
 namespace NemetschekFirstAssigment.ViewModel
 {
@@ -22,15 +20,8 @@ namespace NemetschekFirstAssigment.ViewModel
             }
         }
 
-        public string ProblemLabel
-        {
-            get { return "File not loaded correctly"; }
-        }
-
         public MainViewModel()
         {
-            try
-            {
                 AllModels = new ObservableCollection<object>
             {
                 #region General
@@ -68,12 +59,6 @@ namespace NemetschekFirstAssigment.ViewModel
                 #endregion
 
             };
-            }
-
-            catch (NullReferenceException)
-            {
-
-            }
         }
 
         #region Command for window closed
@@ -94,7 +79,7 @@ namespace NemetschekFirstAssigment.ViewModel
 
         private void CloseWindow()
         {
-            GeneralViewModel.SaveXml(gModel);
+            GeneralViewModel.SaveXml(FilePath,gModel);
         }
     }
 }

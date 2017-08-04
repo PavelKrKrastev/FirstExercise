@@ -8,9 +8,9 @@ namespace NemetschekFirstAssigment.ViewModel
 {
     public class GeneralViewModel : BaseViewModel
     {
-        private static string xmlUrl = @"XmlFile\Information.xml";
+        public static GeneralModel gModel;
 
-        public static GeneralModel gModel = GeneralViewModel.LoadXml(xmlUrl);
+        public string FilePath;
 
         #region Constructor properties
         public string ListContent { get; set; }
@@ -115,7 +115,18 @@ namespace NemetschekFirstAssigment.ViewModel
         #endregion
 
         #region Constructors
-        public GeneralViewModel(){}
+        public GeneralViewModel()
+        {
+            string ProjectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+
+            string PathToFile = Path.Combine(ProjectDirectory, "XmlFile");
+
+            string FileName = "Information.xml";
+
+            FilePath = Path.Combine(PathToFile, FileName);
+
+            gModel = GeneralViewModel.LoadXml(Path.Combine(FilePath));
+        }
 
         public GeneralViewModel(string ListContent, List<object> Subcategories)
         {
@@ -139,9 +150,9 @@ namespace NemetschekFirstAssigment.ViewModel
             }
         }
 
-        public static void SaveXml(object GeneralModel)
+        public static void SaveXml(string fileName, object GeneralModel)
         {
-            using (var stream = new FileStream(xmlUrl, FileMode.Create))
+            using (var stream = new FileStream(fileName, FileMode.Create))
             {
                 var XML = new XmlSerializer(typeof(GeneralModel));
                 XML.Serialize(stream,GeneralModel);
