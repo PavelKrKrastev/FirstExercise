@@ -111,7 +111,7 @@ namespace NemetschekFirstAssigment.ViewModel
         public string AdvancedValue
         {
             get { return gModel.AdvancedValue; }
-            set { AdvancedValue = gModel.AdvancedValue;  }
+            set { AdvancedValue = gModel.AdvancedValue; }
         }
         #endregion
 
@@ -156,7 +156,7 @@ namespace NemetschekFirstAssigment.ViewModel
             using (var stream = new FileStream(fileName, FileMode.Create))
             {
                 var XML = new XmlSerializer(typeof(GeneralModel));
-                XML.Serialize(stream,GeneralModel);
+                XML.Serialize(stream, GeneralModel);
             }
         }
     }

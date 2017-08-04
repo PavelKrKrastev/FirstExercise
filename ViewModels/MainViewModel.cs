@@ -22,7 +22,7 @@ namespace NemetschekFirstAssigment.ViewModel
 
         public MainViewModel()
         {
-                AllModels = new ObservableCollection<object>
+            AllModels = new ObservableCollection<object>
             {
                 #region General
                 new GeneralViewModel(GeneralValue, new List<object>()
@@ -79,7 +79,7 @@ namespace NemetschekFirstAssigment.ViewModel
 
         private void CloseWindow()
         {
-            GeneralViewModel.SaveXml(FilePath,gModel);
+            GeneralViewModel.SaveXml(FilePath, gModel);
         }
     }
 }

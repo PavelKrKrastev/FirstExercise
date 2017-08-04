@@ -68,7 +68,7 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
 
         public Advanced1ViewModel()
         {
-            LanguageMode = new ObservableCollection<string> {AdvancedComboBox1Item1, AdvancedComboBox1Item2 };
+            LanguageMode = new ObservableCollection<string> { AdvancedComboBox1Item1, AdvancedComboBox1Item2 };
             PowerMode = new ObservableCollection<string> { AdvancedComboBox2Item1, AdvancedComboBox2Item2 };
             BatteryMode = new ObservableCollection<string> { AdvancedComboBox3Item1, AdvancedComboBox3Item2 };
         }

@@ -33,22 +33,6 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
             </DockPanel>
-
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock FontStyle="Italic" FontSize="12" Text="{Binding ProblemLabel}">
-                    <TextBlock.Style>
-                        <Style TargetType="{x:Type TextBlock}">
-                            <Setter Property="Visibility" Value="Collapsed" />
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding ElementName=lbCategory, Path=Items.Count}" Value="0">
-                                    <Setter Property="Visibility" Value="Visible" />
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBlock.Style>
-                </TextBlock>
-            </StackPanel>
-
         </Grid>
 
         <Grid Grid.Column="1" Margin="0,0,5,0">

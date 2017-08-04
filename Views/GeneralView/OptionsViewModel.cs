@@ -13,9 +13,9 @@ namespace NemetschekFirstAssigment.Views.GeneralView
         public string GeneralLabel
         {
             get { return gModel.GeneralLabel; }
-            set { gModel.GeneralLabel = value;}
+            set { gModel.GeneralLabel = value; }
         }
 
-        
+
     }
 }

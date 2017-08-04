@@ -7,7 +7,7 @@ namespace NemetschekFirstAssigment.Views.GeneralView
         public bool GeneralCheckBox3
         {
             get { return gModel.GeneralCheckBox3; }
-            set {gModel.GeneralCheckBox3 = value; RaisePropertyChangedEvent("GeneralCheckBox3"); }
+            set { gModel.GeneralCheckBox3 = value; RaisePropertyChangedEvent("GeneralCheckBox3"); }
         }
 
         public string GeneralLabel

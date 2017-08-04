@@ -53,7 +53,7 @@ namespace NemetschekFirstAssigment.Models
         public string ToolsValue { get; set; }
 
         [XmlElement("Windowlabel")]
-        public string WindowLabel{ get; set; }
+        public string WindowLabel { get; set; }
         [XmlElement("WindowTab1")]
         public string WindowTab1 { get; set; }
         [XmlElement("WindowTab2")]
@@ -102,6 +102,6 @@ namespace NemetschekFirstAssigment.Models
         [XmlElement("AdvancedName")]
         public string AdvancedValue { get; set; }
 
-        public GeneralModel(){}
+        public GeneralModel() { }
     }
 }

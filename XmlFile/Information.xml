@@ -4,13 +4,13 @@
   <GeneralTab2>Preferences</GeneralTab2>
   <GeneralTab3>Settings</GeneralTab3>
   <GeneralLabel>General ViewModel</GeneralLabel>
-  <GeneralCheckBox1>false</GeneralCheckBox1>
-  <GeneralCheckBox2>true</GeneralCheckBox2>
+  <GeneralCheckBox1>true</GeneralCheckBox1>
+  <GeneralCheckBox2>false</GeneralCheckBox2>
   <GeneralCheckBox3>false</GeneralCheckBox3>
   <GeneralName>General</GeneralName>
   <ToolsTab>Tools</ToolsTab>
   <ToolsCheckBox1>false</ToolsCheckBox1>
-  <ToolsCheckBox2>false</ToolsCheckBox2>
+  <ToolsCheckBox2>true</ToolsCheckBox2>
   <ToolsCheckBox3>true</ToolsCheckBox3>
   <ToolsRadioButton1>false</ToolsRadioButton1>
   <ToolsRadioButton2>true</ToolsRadioButton2>
@@ -19,22 +19,22 @@
   <ToolsListBoxItem2>Hammer</ToolsListBoxItem2>
   <ToolsListBoxItem3>Hex Key</ToolsListBoxItem3>
   <ToolsListBoxItem4>Torque Wrench</ToolsListBoxItem4>
-  <ToolsListBoxSelectedItem>Wrench</ToolsListBoxSelectedItem>
+  <ToolsListBoxSelectedItem>Torque Wrench</ToolsListBoxSelectedItem>
   <ToolsName>Tools</ToolsName>
   <Windowlabel>Window ViewModel</Windowlabel>
   <WindowTab1>View</WindowTab1>
   <WindowTab2>Resolution</WindowTab2>
-  <WindowCheckBox1>false</WindowCheckBox1>
-  <WindowCheckBox2>true</WindowCheckBox2>
+  <WindowCheckBox1>true</WindowCheckBox1>
+  <WindowCheckBox2>false</WindowCheckBox2>
   <WindowName>Window</WindowName>
   <AdvancedLabel>Advanced ViewModel</AdvancedLabel>
   <AdvancedTab1>Advanced 1</AdvancedTab1>
   <AdvancedTab2>Advanced 2</AdvancedTab2>
   <AdvancedTab3>Advanced 3</AdvancedTab3>
   <AdvancedTab4>Advanced 4</AdvancedTab4>
-  <AdvancedCheckBox2>true</AdvancedCheckBox2>
-  <AdvancedCheckBox3>false</AdvancedCheckBox3>
-  <AdvancedCheckBox4>true</AdvancedCheckBox4>
+  <AdvancedCheckBox2>false</AdvancedCheckBox2>
+  <AdvancedCheckBox3>true</AdvancedCheckBox3>
+  <AdvancedCheckBox4>false</AdvancedCheckBox4>
   <AdvancedComboBox1Item1>English</AdvancedComboBox1Item1>
   <AdvancedComboBox1Item2>German</AdvancedComboBox1Item2>
   <AdvancedComboBox2Item1>Power Saver</AdvancedComboBox2Item1>
@@ -42,7 +42,7 @@
   <AdvancedComboBox3Item1>Normal</AdvancedComboBox3Item1>
   <AdvancedComboBox3Item2>Stamina</AdvancedComboBox3Item2>
   <AdvancedComboBox1SelectedItem>German</AdvancedComboBox1SelectedItem>
-  <AdvancedComboBox2SelectedItem>Power Saver</AdvancedComboBox2SelectedItem>
+  <AdvancedComboBox2SelectedItem>Performance</AdvancedComboBox2SelectedItem>
   <AdvancedComboBox3SelectedItem>Normal</AdvancedComboBox3SelectedItem>
   <AdvancedName>Advanced</AdvancedName>
 </WindowContent>

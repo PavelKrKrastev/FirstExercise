@@ -77,7 +77,7 @@ namespace NemetschekFirstAssigment.Views.ToolView
 
         public ToolsViewModel()
         {
-            ToolsList = new List<string> {ToolsListBox1, ToolsListBox2, ToolsListBox3, ToolsListBox4 };
+            ToolsList = new List<string> { ToolsListBox1, ToolsListBox2, ToolsListBox3, ToolsListBox4 };
         }
     }
 }
