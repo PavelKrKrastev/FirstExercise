@@ -2,7 +2,7 @@
 
 namespace NemetschekFirstAssigment.Views.GeneralView
 {
-    public class OptionsViewModel : GeneralViewModel
+    class OptionsViewModel : GeneralViewModel
     {
         public bool GeneralCheckBox1
         {
@@ -15,7 +15,5 @@ namespace NemetschekFirstAssigment.Views.GeneralView
             get { return gModel.GeneralLabel; }
             set { gModel.GeneralLabel = value; }
         }
-
-
     }
 }

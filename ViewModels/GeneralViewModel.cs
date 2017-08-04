@@ -8,16 +8,17 @@ namespace NemetschekFirstAssigment.ViewModel
 {
     public class GeneralViewModel : BaseViewModel
     {
+        public static string ProjectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+        public static string PathToFile = Path.Combine(ProjectDirectory, "XmlFile");
+        public static string FileName = "Information.xml";
+        public static string FilePath = Path.Combine(PathToFile, FileName);
+        public static GeneralModel gModel = GeneralViewModel.LoadXml(Path.Combine(FilePath));
+
         #region Constructor properties
         public string ListContent { get; set; }
         public string TabName { get; set; }
         public object TabContent { get; set; }
         public List<object> Subcategories { get; set; }
-        public static GeneralModel gModel { get; set; }
-        private string ProjectDirectory { get; set; }
-        private string PathToFile { get; set; }
-        private string FileName { get; set; }
-        public string FilePath { get; set; }
         #endregion
 
         #region GeneralView Properties
@@ -118,15 +119,6 @@ namespace NemetschekFirstAssigment.ViewModel
         #region Constructors
         public GeneralViewModel()
         {
-            ProjectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-
-            string PathToFile = Path.Combine(ProjectDirectory, "XmlFile");
-
-            string FileName = "Information.xml";
-
-            FilePath = Path.Combine(PathToFile, FileName);
-
-            gModel = GeneralViewModel.LoadXml(Path.Combine(FilePath));
         }
 
         public GeneralViewModel(string ListContent, List<object> Subcategories)
