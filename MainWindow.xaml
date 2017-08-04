@@ -38,7 +38,7 @@
         <Grid Grid.Column="1" Margin="0,0,5,0">
             <DockPanel>
                 <Label Grid.Column="0" DockPanel.Dock="Top">Select Subcategory:</Label>
-                <TabControl  Grid.Column="1" Margin="0,0,0,5" ItemsSource="{Binding ElementName=lbCategory, Path=SelectedItem.Subcategories}" SelectedItem="{Binding ElementName=lbCategory, Path=SelectedItem.Subcategories[0]}">
+                <TabControl  Grid.Column="1" Margin="0,0,0,5" ItemsSource="{Binding ElementName=lbCategory, Path=SelectedItem.Subcategories}">
 
                     <TabControl.Resources>
                         <Style TargetType="TabItem">

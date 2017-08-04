@@ -6,14 +6,14 @@
   <GeneralLabel>General ViewModel</GeneralLabel>
   <GeneralCheckBox1>true</GeneralCheckBox1>
   <GeneralCheckBox2>false</GeneralCheckBox2>
-  <GeneralCheckBox3>false</GeneralCheckBox3>
+  <GeneralCheckBox3>true</GeneralCheckBox3>
   <GeneralName>General</GeneralName>
   <ToolsTab>Tools</ToolsTab>
-  <ToolsCheckBox1>false</ToolsCheckBox1>
-  <ToolsCheckBox2>true</ToolsCheckBox2>
+  <ToolsCheckBox1>true</ToolsCheckBox1>
+  <ToolsCheckBox2>false</ToolsCheckBox2>
   <ToolsCheckBox3>true</ToolsCheckBox3>
-  <ToolsRadioButton1>true</ToolsRadioButton1>
-  <ToolsRadioButton2>false</ToolsRadioButton2>
+  <ToolsRadioButton1>false</ToolsRadioButton1>
+  <ToolsRadioButton2>true</ToolsRadioButton2>
   <ToolsRadioButton3>false</ToolsRadioButton3>
   <ToolsListBoxItem1>Wrench</ToolsListBoxItem1>
   <ToolsListBoxItem2>Hammer</ToolsListBoxItem2>
@@ -24,7 +24,7 @@
   <Windowlabel>Window ViewModel</Windowlabel>
   <WindowTab1>View</WindowTab1>
   <WindowTab2>Resolution</WindowTab2>
-  <WindowCheckBox1>false</WindowCheckBox1>
+  <WindowCheckBox1>true</WindowCheckBox1>
   <WindowCheckBox2>true</WindowCheckBox2>
   <WindowName>Window</WindowName>
   <AdvancedLabel>Advanced ViewModel</AdvancedLabel>
@@ -34,14 +34,14 @@
   <AdvancedTab4>Advanced 4</AdvancedTab4>
   <AdvancedCheckBox2>false</AdvancedCheckBox2>
   <AdvancedCheckBox3>true</AdvancedCheckBox3>
-  <AdvancedCheckBox4>true</AdvancedCheckBox4>
+  <AdvancedCheckBox4>false</AdvancedCheckBox4>
   <AdvancedComboBox1Item1>English</AdvancedComboBox1Item1>
   <AdvancedComboBox1Item2>German</AdvancedComboBox1Item2>
   <AdvancedComboBox2Item1>Power Saver</AdvancedComboBox2Item1>
   <AdvancedComboBox2Item2>Performance</AdvancedComboBox2Item2>
   <AdvancedComboBox3Item1>Normal</AdvancedComboBox3Item1>
   <AdvancedComboBox3Item2>Stamina</AdvancedComboBox3Item2>
-  <AdvancedComboBox1SelectedItem>German</AdvancedComboBox1SelectedItem>
+  <AdvancedComboBox1SelectedItem>English</AdvancedComboBox1SelectedItem>
   <AdvancedComboBox2SelectedItem>Performance</AdvancedComboBox2SelectedItem>
   <AdvancedComboBox3SelectedItem>Normal</AdvancedComboBox3SelectedItem>
   <AdvancedName>Advanced</AdvancedName>
