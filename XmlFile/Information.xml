@@ -4,9 +4,9 @@
   <GeneralTab2>Preferences</GeneralTab2>
   <GeneralTab3>Settings</GeneralTab3>
   <GeneralLabel>General ViewModel</GeneralLabel>
-  <GeneralCheckBox1>true</GeneralCheckBox1>
+  <GeneralCheckBox1>false</GeneralCheckBox1>
   <GeneralCheckBox2>true</GeneralCheckBox2>
-  <GeneralCheckBox3>true</GeneralCheckBox3>
+  <GeneralCheckBox3>false</GeneralCheckBox3>
   <GeneralName>General</GeneralName>
   <ToolsTab>Tools</ToolsTab>
   <ToolsCheckBox1>false</ToolsCheckBox1>
