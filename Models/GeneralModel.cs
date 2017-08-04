@@ -34,8 +34,12 @@ namespace NemetschekFirstAssigment.Models
         public bool ToolsCheckBox2 { get; set; }
         [XmlElement("ToolsCheckBox3")]
         public bool ToolsCheckBox3 { get; set; }
-        [XmlElement("ToolsRadioButton")]
-        public bool ToolsRadioButton { get; set; }
+        [XmlElement("ToolsRadioButton1")]
+        public bool ToolsRadioButton1 { get; set; }
+        [XmlElement("ToolsRadioButton2")]
+        public bool ToolsRadioButton2 { get; set; }
+        [XmlElement("ToolsRadioButton3")]
+        public bool ToolsRadioButton3 { get; set; }
         [XmlElement("ToolsListBoxItem1")]
         public string ToolsListBox1 { get; set; }
         [XmlElement("ToolsListBoxItem2")]
@@ -44,6 +48,8 @@ namespace NemetschekFirstAssigment.Models
         public string ToolsListBox3 { get; set; }
         [XmlElement("ToolsListBoxItem4")]
         public string ToolsListBox4 { get; set; }
+        [XmlElement("ToolsListBoxSelectedItem")]
+        public string ToolsListBoxSelectedItem { get; set; }
         [XmlElement("ToolsName")]
         public string ToolsValue { get; set; }
 
@@ -88,6 +94,12 @@ namespace NemetschekFirstAssigment.Models
         public string AdvancedComboBox3Item1 { get; set; }
         [XmlElement("AdvancedComboBox3Item2")]
         public string AdvancedComboBox3Item2 { get; set; }
+        [XmlElement("AdvancedComboBox1SelectedItem")]
+        public string AdvancedComboBox1SelectedItem { get; set; }
+        [XmlElement("AdvancedComboBox2SelectedItem")]
+        public string AdvancedComboBox2SelectedItem { get; set; }
+        [XmlElement("AdvancedComboBox3SelectedItem")]
+        public string AdvancedComboBox3SelectedItem { get; set; }
         [XmlElement("AdvancedName")]
         public string AdvancedValue { get; set; }
 

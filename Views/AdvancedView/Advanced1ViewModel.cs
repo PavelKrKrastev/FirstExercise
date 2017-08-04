@@ -42,6 +42,24 @@ namespace NemetschekFirstAssigment.Views.AdvancedView
             set { gModel.AdvancedComboBox3Item2 = value; RaisePropertyChangedEvent("AdvancedComboBox3Item2"); }
         }
 
+        public string AdvancedComboBox1SelectedItem
+        {
+            get { return gModel.AdvancedComboBox1SelectedItem; }
+            set { gModel.AdvancedComboBox1SelectedItem = value; RaisePropertyChangedEvent("AdvancedComboBox1SelectedItem"); }
+        }
+
+        public string AdvancedComboBox2SelectedItem
+        {
+            get { return gModel.AdvancedComboBox2SelectedItem; }
+            set { gModel.AdvancedComboBox2SelectedItem = value; RaisePropertyChangedEvent("AdvancedComboBox2SelectedItem"); }
+        }
+
+        public string AdvancedComboBox3SelectedItem
+        {
+            get { return gModel.AdvancedComboBox3SelectedItem; }
+            set { gModel.AdvancedComboBox3SelectedItem = value; RaisePropertyChangedEvent("AdvancedComboBox3SelectedItem"); }
+        }
+
         public ObservableCollection<String> LanguageMode { get; set; }
 
         public ObservableCollection<String> PowerMode { get; set; }

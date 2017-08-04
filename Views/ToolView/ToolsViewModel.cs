@@ -24,10 +24,22 @@ namespace NemetschekFirstAssigment.Views.ToolView
             set { gModel.ToolsCheckBox3 = value; RaisePropertyChangedEvent("ToolsCheckBox3"); }
         }
 
-        public bool ToolsRadioButton
+        public bool ToolsRadioButton1
         {
-            get { return gModel.ToolsRadioButton; }
-            set { gModel.ToolsRadioButton = value; RaisePropertyChangedEvent("ToolsRadioButton"); }
+            get { return gModel.ToolsRadioButton1; }
+            set { gModel.ToolsRadioButton1 = value; RaisePropertyChangedEvent("ToolsRadioButton1"); }
+        }
+
+        public bool ToolsRadioButton2
+        {
+            get { return gModel.ToolsRadioButton2; }
+            set { gModel.ToolsRadioButton2 = value; RaisePropertyChangedEvent("ToolsRadioButton2"); }
+        }
+
+        public bool ToolsRadioButton3
+        {
+            get { return gModel.ToolsRadioButton3; }
+            set { gModel.ToolsRadioButton3 = value; RaisePropertyChangedEvent("ToolsRadioButton3"); }
         }
 
         public string ToolsListBox1
@@ -52,6 +64,12 @@ namespace NemetschekFirstAssigment.Views.ToolView
         {
             get { return gModel.ToolsListBox4; }
             set { gModel.ToolsListBox4 = value; RaisePropertyChangedEvent("ToolsListBox4"); }
+        }
+
+        public string ToolsListBoxSelectedItem
+        {
+            get { return gModel.ToolsListBoxSelectedItem; }
+            set { gModel.ToolsListBoxSelectedItem = value; RaisePropertyChangedEvent("ToolsListBoxSelectedItem"); }
         }
 
         public List<String> ToolsList { get; set; }

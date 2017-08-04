@@ -141,7 +141,7 @@ namespace NemetschekFirstAssigment.ViewModel
 
         public static void SaveXml(object GeneralModel)
         {
-            using (var stream = new FileStream(xmlUrl, FileMode.Create, FileAccess.Write, FileShare.None))
+            using (var stream = new FileStream(xmlUrl, FileMode.Create))
             {
                 var XML = new XmlSerializer(typeof(GeneralModel));
                 XML.Serialize(stream,GeneralModel);

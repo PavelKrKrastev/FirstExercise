@@ -18,7 +18,7 @@
 
         <DockPanel Margin="5,0">
         <Label DockPanel.Dock="Top">Select option:</Label>
-        <ListBox Name="lstItems" ItemsSource="{Binding ToolsList}" DockPanel.Dock="Bottom">
+        <ListBox Name="lstItems" ItemsSource="{Binding ToolsList}" DockPanel.Dock="Bottom" SelectedItem="{Binding ToolsListBoxSelectedItem}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding}" />
@@ -36,9 +36,9 @@
 
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0">
             <Label>Select option:</Label>
-            <RadioButton GroupName="ToolsGroup" Margin="5,0,5,5">Yes</RadioButton>
-            <RadioButton GroupName="ToolsGroup" Margin="5">No</RadioButton>
-            <RadioButton GroupName="ToolsGroup" IsChecked="{Binding ToolsRadioButton}" Margin="5">Maybe</RadioButton>
+            <RadioButton GroupName="Group" Margin="5,0,5,5" IsChecked="{Binding ToolsRadioButton1}">Yes</RadioButton>
+            <RadioButton GroupName="Group" Margin="5" IsChecked="{Binding ToolsRadioButton2}">No</RadioButton>
+            <RadioButton GroupName="Group" IsChecked="{Binding ToolsRadioButton3}" Margin="5">Maybe</RadioButton>
         </StackPanel>
         
     </Grid>

@@ -11,17 +11,17 @@
             
             <StackPanel>
                 <Label Content="Choose language:"/>
-                <ComboBox ItemsSource="{Binding LanguageMode}" Margin="5,0,5,5" SelectedIndex="0"></ComboBox>
+                <ComboBox ItemsSource="{Binding LanguageMode}" SelectedItem="{Binding AdvancedComboBox1SelectedItem}" Margin="5,0,5,5"></ComboBox>
             </StackPanel>
 
             <StackPanel >
                 <Label Content="Select a power mode:"/>
-                <ComboBox ItemsSource="{Binding PowerMode}" Margin="5,0,5,5" SelectedIndex="0"></ComboBox>
+                <ComboBox ItemsSource="{Binding PowerMode}" Margin="5,0,5,5" SelectedItem="{Binding AdvancedComboBox2SelectedItem}"></ComboBox>
             </StackPanel>
 
             <StackPanel >
                 <Label Content="Select battery mode:"/>
-                <ComboBox ItemsSource="{Binding BatteryMode}" Margin="5,0,5,5" SelectedIndex="0"></ComboBox>
+                <ComboBox ItemsSource="{Binding BatteryMode}" Margin="5,0,5,5" SelectedItem="{Binding AdvancedComboBox3SelectedItem}"></ComboBox>
             </StackPanel>
 
         </StackPanel>

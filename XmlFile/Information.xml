@@ -4,7 +4,7 @@
   <GeneralTab2>Preferences</GeneralTab2>
   <GeneralTab3>Settings</GeneralTab3>
   <GeneralLabel>General ViewModel</GeneralLabel>
-  <GeneralCheckBox1>false</GeneralCheckBox1>
+  <GeneralCheckBox1>true</GeneralCheckBox1>
   <GeneralCheckBox2>false</GeneralCheckBox2>
   <GeneralCheckBox3>true</GeneralCheckBox3>
   <GeneralName>General</GeneralName>
@@ -12,11 +12,14 @@
   <ToolsCheckBox1>true</ToolsCheckBox1>
   <ToolsCheckBox2>false</ToolsCheckBox2>
   <ToolsCheckBox3>true</ToolsCheckBox3>
-  <ToolsRadioButton>true</ToolsRadioButton>
+  <ToolsRadioButton1>true</ToolsRadioButton1>
+  <ToolsRadioButton2>false</ToolsRadioButton2>
+  <ToolsRadioButton3>true</ToolsRadioButton3>
   <ToolsListBoxItem1>Wrench</ToolsListBoxItem1>
   <ToolsListBoxItem2>Hammer</ToolsListBoxItem2>
   <ToolsListBoxItem3>Hex Key</ToolsListBoxItem3>
   <ToolsListBoxItem4>Torque Wrench</ToolsListBoxItem4>
+  <ToolsListBoxSelectedItem>Wrench</ToolsListBoxSelectedItem>
   <ToolsName>Tools</ToolsName>
   <Windowlabel>Window ViewModel</Windowlabel>
   <WindowTab1>View</WindowTab1>
@@ -38,5 +41,8 @@
   <AdvancedComboBox2Item2>High Performance</AdvancedComboBox2Item2>
   <AdvancedComboBox3Item1>Normal</AdvancedComboBox3Item1>
   <AdvancedComboBox3Item2>Stamina</AdvancedComboBox3Item2>
+  <AdvancedComboBox1SelectedItem>English</AdvancedComboBox1SelectedItem>
+  <AdvancedComboBox2SelectedItem>Power Saver</AdvancedComboBox2SelectedItem>
+  <AdvancedComboBox3SelectedItem>Stamina</AdvancedComboBox3SelectedItem>
   <AdvancedName>Advanced</AdvancedName>
 </WindowContent>
