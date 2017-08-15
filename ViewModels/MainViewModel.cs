@@ -20,6 +20,7 @@ namespace NemetschekFirstAssigment.ViewModel
             }
         }
 
+        public int SelectedIndex { get;set; }
         public MainViewModel()
         {
             AllModels = new ObservableCollection<object>
@@ -75,12 +76,11 @@ namespace NemetschekFirstAssigment.ViewModel
                 return closeWindowCommand;
             }
         }
-        #endregion
-
         private void CloseWindow()
         {
             GeneralViewModel.SaveXml(FilePath, gModel);
         }
+        #endregion
     }
 }
 

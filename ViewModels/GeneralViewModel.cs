@@ -12,7 +12,7 @@ namespace NemetschekFirstAssigment.ViewModel
         public static string PathToFile = Path.Combine(ProjectDirectory, "XmlFile");
         public static string FileName = "Information.xml";
         public static string FilePath = Path.Combine(PathToFile, FileName);
-        public static GeneralModel gModel = GeneralViewModel.LoadXml(Path.Combine(FilePath));
+        public static GeneralModel gModel = GeneralViewModel.LoadXml(FilePath);
 
         #region Constructor properties
         public string ListContent { get; set; }
