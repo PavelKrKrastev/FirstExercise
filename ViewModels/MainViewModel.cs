@@ -20,13 +20,12 @@ namespace NemetschekFirstAssigment.ViewModel
             }
         }
 
-        public int SelectedIndex { get;set; }
         public MainViewModel()
         {
             AllModels = new ObservableCollection<object>
             {
                 #region General
-                new GeneralViewModel(GeneralValue, new List<object>()
+                new GeneralViewModel(GeneralValue, 0, new List<object>()
                 {
                     new GeneralViewModel(GeneralTab1, new OptionsView()),
                     new GeneralViewModel(GeneralTab2, new PreferencesView()),
@@ -35,14 +34,14 @@ namespace NemetschekFirstAssigment.ViewModel
                 #endregion
 
                 #region Tools
-                new GeneralViewModel(ToolsValue, new List<object>()
+                new GeneralViewModel(ToolsValue, 0, new List<object>()
                 {
                     new GeneralViewModel(ToolsTab, new ToolsView())
                 }),
                 #endregion
 
                 #region Window
-                new GeneralViewModel(WindowValue, new List<object>()
+                new GeneralViewModel(WindowValue, 1, new List<object>()
                 {
                     new GeneralViewModel(WindowTab1, new ViewView()),
                     new GeneralViewModel(WindowTab2, new ResolutionView()),
@@ -50,7 +49,7 @@ namespace NemetschekFirstAssigment.ViewModel
                 #endregion
 
                 #region Advanced
-                new GeneralViewModel(AdvancedValue, new List<object>()
+                new GeneralViewModel(AdvancedValue, 0, new List<object>()
                 {               
                     new GeneralViewModel(AdvancedTab1, new Advanced1View()),
                     new GeneralViewModel(AdvancedTab2, new Advanced2View()),

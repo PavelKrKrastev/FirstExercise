@@ -18,6 +18,7 @@ namespace NemetschekFirstAssigment.ViewModel
         public string ListContent { get; set; }
         public string TabName { get; set; }
         public object TabContent { get; set; }
+        public int SelectedIndex { get; set; }
         public List<object> Subcategories { get; set; }
         #endregion
 
@@ -121,9 +122,10 @@ namespace NemetschekFirstAssigment.ViewModel
         {
         }
 
-        public GeneralViewModel(string ListContent, List<object> Subcategories)
+        public GeneralViewModel(string ListContent, int SelectedIndex, List<object> Subcategories)
         {
             this.ListContent = ListContent;
+            this.SelectedIndex = SelectedIndex;
             this.Subcategories = Subcategories;
         }
 
