@@ -41,7 +41,7 @@ namespace NemetschekFirstAssigment.ViewModel
                 #endregion
 
                 #region Window
-                new GeneralViewModel(WindowValue, 1, new List<object>()
+                new GeneralViewModel(WindowValue, 0, new List<object>()
                 {
                     new GeneralViewModel(WindowTab1, new ViewView()),
                     new GeneralViewModel(WindowTab2, new ResolutionView()),
