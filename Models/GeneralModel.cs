@@ -23,8 +23,6 @@ namespace NemetschekFirstAssigment.Models
         public bool GeneralCheckBox3 { get; set; }
         [XmlElement]
         public string GeneralValue { get; set; }
-        [XmlElement]
-        public int GeneralIndex { get; set; }
 
         [XmlElement]
         public string ToolsTab { get; set; }
@@ -52,8 +50,6 @@ namespace NemetschekFirstAssigment.Models
         public string ToolsListBoxSelectedItem { get; set; }
         [XmlElement]
         public string ToolsValue { get; set; }
-        [XmlElement]
-        public int ToolsIndex { get; set; }
 
         [XmlElement]
         public string WindowLabel { get; set; }
@@ -67,8 +63,6 @@ namespace NemetschekFirstAssigment.Models
         public bool WindowCheckBox2 { get; set; }
         [XmlElement]
         public string WindowValue { get; set; }
-        [XmlElement]
-        public int WindowIndex { get; set; }
 
         [XmlElement]
         public string AdvancedLabel { get; set; }
@@ -106,8 +100,6 @@ namespace NemetschekFirstAssigment.Models
         public string AdvancedComboBox3SelectedItem { get; set; }
         [XmlElement]
         public string AdvancedValue { get; set; }
-        [XmlElement]
-        public int AdvancedIndex { get; set; }
 
         public GeneralModel() { }
     }
