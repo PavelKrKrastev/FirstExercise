@@ -44,26 +44,26 @@ namespace NemetschekFirstAssigment.Views.ToolView
 
         public string ToolsListBox1
         {
-            get { return gModel.ToolsListBox1; }
-            set { gModel.ToolsListBox1 = value; RaisePropertyChangedEvent("ToolsListBox1"); }
+            get { return gModel.ToolsListBoxItem1; }
+            set { gModel.ToolsListBoxItem1 = value; RaisePropertyChangedEvent("ToolsListBox1"); }
         }
 
         public string ToolsListBox2
         {
-            get { return gModel.ToolsListBox2; }
-            set { gModel.ToolsListBox2 = value; RaisePropertyChangedEvent("ToolsListBox2"); }
+            get { return gModel.ToolsListBoxItem2; }
+            set { gModel.ToolsListBoxItem2 = value; RaisePropertyChangedEvent("ToolsListBox2"); }
         }
 
         public string ToolsListBox3
         {
-            get { return gModel.ToolsListBox3; }
-            set { gModel.ToolsListBox3 = value; RaisePropertyChangedEvent("ToolsListBox3"); }
+            get { return gModel.ToolsListBoxItem3; }
+            set { gModel.ToolsListBoxItem3 = value; RaisePropertyChangedEvent("ToolsListBox3"); }
         }
 
         public string ToolsListBox4
         {
-            get { return gModel.ToolsListBox4; }
-            set { gModel.ToolsListBox4 = value; RaisePropertyChangedEvent("ToolsListBox4"); }
+            get { return gModel.ToolsListBoxItem4; }
+            set { gModel.ToolsListBoxItem4 = value; RaisePropertyChangedEvent("ToolsListBox4"); }
         }
 
         public string ToolsListBoxSelectedItem

@@ -7,100 +7,107 @@ namespace NemetschekFirstAssigment.Models
     [XmlRoot("WindowContent")]
     public class GeneralModel
     {
-        [XmlElement("GeneralTab1")]
+        [XmlElement]
         public string GeneralTab1 { get; set; }
-        [XmlElement("GeneralTab2")]
+        [XmlElement]
         public string GeneralTab2 { get; set; }
-        [XmlElement("GeneralTab3")]
+        [XmlElement]
         public string GeneralTab3 { get; set; }
-        [XmlElement("GeneralLabel")]
+        [XmlElement]
         public string GeneralLabel { get; set; }
-        [XmlElement("GeneralCheckBox1")]
+        [XmlElement]
         public bool GeneralCheckBox1 { get; set; }
-        [XmlElement("GeneralCheckBox2")]
+        [XmlElement]
         public bool GeneralCheckBox2 { get; set; }
-        [XmlElement("GeneralCheckBox3")]
+        [XmlElement]
         public bool GeneralCheckBox3 { get; set; }
-        [XmlElement("GeneralName")]
+        [XmlElement]
         public string GeneralValue { get; set; }
+        [XmlElement]
+        public int GeneralIndex { get; set; }
 
-
-        [XmlElement("ToolsTab")]
+        [XmlElement]
         public string ToolsTab { get; set; }
-        [XmlElement("ToolsCheckBox1")]
+        [XmlElement]
         public bool ToolsCheckBox1 { get; set; }
-        [XmlElement("ToolsCheckBox2")]
+        [XmlElement]
         public bool ToolsCheckBox2 { get; set; }
-        [XmlElement("ToolsCheckBox3")]
+        [XmlElement]
         public bool ToolsCheckBox3 { get; set; }
-        [XmlElement("ToolsRadioButton1")]
+        [XmlElement]
         public bool ToolsRadioButton1 { get; set; }
-        [XmlElement("ToolsRadioButton2")]
+        [XmlElement]
         public bool ToolsRadioButton2 { get; set; }
-        [XmlElement("ToolsRadioButton3")]
+        [XmlElement]
         public bool ToolsRadioButton3 { get; set; }
-        [XmlElement("ToolsListBoxItem1")]
-        public string ToolsListBox1 { get; set; }
-        [XmlElement("ToolsListBoxItem2")]
-        public string ToolsListBox2 { get; set; }
-        [XmlElement("ToolsListBoxItem3")]
-        public string ToolsListBox3 { get; set; }
-        [XmlElement("ToolsListBoxItem4")]
-        public string ToolsListBox4 { get; set; }
-        [XmlElement("ToolsListBoxSelectedItem")]
+        [XmlElement]
+        public string ToolsListBoxItem1 { get; set; }
+        [XmlElement]
+        public string ToolsListBoxItem2 { get; set; }
+        [XmlElement]
+        public string ToolsListBoxItem3 { get; set; }
+        [XmlElement]
+        public string ToolsListBoxItem4 { get; set; }
+        [XmlElement]
         public string ToolsListBoxSelectedItem { get; set; }
-        [XmlElement("ToolsName")]
+        [XmlElement]
         public string ToolsValue { get; set; }
+        [XmlElement]
+        public int ToolsIndex { get; set; }
 
-        [XmlElement("Windowlabel")]
+        [XmlElement]
         public string WindowLabel { get; set; }
-        [XmlElement("WindowTab1")]
+        [XmlElement]
         public string WindowTab1 { get; set; }
-        [XmlElement("WindowTab2")]
+        [XmlElement]
         public string WindowTab2 { get; set; }
-        [XmlElement("WindowCheckBox1")]
+        [XmlElement]
         public bool WindowCheckBox1 { get; set; }
-        [XmlElement("WindowCheckBox2")]
+        [XmlElement]
         public bool WindowCheckBox2 { get; set; }
-        [XmlElement("WindowName")]
+        [XmlElement]
         public string WindowValue { get; set; }
+        [XmlElement]
+        public int WindowIndex { get; set; }
 
-        [XmlElement("AdvancedLabel")]
+        [XmlElement]
         public string AdvancedLabel { get; set; }
-        [XmlElement("AdvancedTab1")]
+        [XmlElement]
         public string AdvancedTab1 { get; set; }
-        [XmlElement("AdvancedTab2")]
+        [XmlElement]
         public string AdvancedTab2 { get; set; }
-        [XmlElement("AdvancedTab3")]
+        [XmlElement]
         public string AdvancedTab3 { get; set; }
-        [XmlElement("AdvancedTab4")]
+        [XmlElement]
         public string AdvancedTab4 { get; set; }
-        [XmlElement("AdvancedCheckBox2")]
+        [XmlElement]
         public bool AdvancedCheckBox2 { get; set; }
-        [XmlElement("AdvancedCheckBox3")]
+        [XmlElement]
         public bool AdvancedCheckBox3 { get; set; }
-        [XmlElement("AdvancedCheckBox4")]
+        [XmlElement]
         public bool AdvancedCheckBox4 { get; set; }
-        [XmlElement("AdvancedComboBox1Item1")]
+        [XmlElement]
         public string AdvancedComboBox1Item1 { get; set; }
-        [XmlElement("AdvancedComboBox1Item2")]
+        [XmlElement]
         public string AdvancedComboBox1Item2 { get; set; }
-        [XmlElement("AdvancedComboBox2Item1")]
+        [XmlElement]
         public string AdvancedComboBox2Item1 { get; set; }
-        [XmlElement("AdvancedComboBox2Item2")]
+        [XmlElement]
         public string AdvancedComboBox2Item2 { get; set; }
-        [XmlElement("AdvancedComboBox3Item1")]
+        [XmlElement]
         public string AdvancedComboBox3Item1 { get; set; }
-        [XmlElement("AdvancedComboBox3Item2")]
+        [XmlElement]
         public string AdvancedComboBox3Item2 { get; set; }
-        [XmlElement("AdvancedComboBox1SelectedItem")]
+        [XmlElement]
         public string AdvancedComboBox1SelectedItem { get; set; }
-        [XmlElement("AdvancedComboBox2SelectedItem")]
+        [XmlElement]
         public string AdvancedComboBox2SelectedItem { get; set; }
-        [XmlElement("AdvancedComboBox3SelectedItem")]
+        [XmlElement]
         public string AdvancedComboBox3SelectedItem { get; set; }
-        [XmlElement("AdvancedName")]
+        [XmlElement]
         public string AdvancedValue { get; set; }
+        [XmlElement]
+        public int AdvancedIndex { get; set; }
 
         public GeneralModel() { }
     }
