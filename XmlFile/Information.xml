@@ -8,11 +8,10 @@
   <GeneralCheckBox2>true</GeneralCheckBox2>
   <GeneralCheckBox3>false</GeneralCheckBox3>
   <GeneralValue>General</GeneralValue>
-  <GeneralIndex>0</GeneralIndex>
   <ToolsTab>Tools</ToolsTab>
   <ToolsCheckBox1>true</ToolsCheckBox1>
-  <ToolsCheckBox2>true</ToolsCheckBox2>
-  <ToolsCheckBox3>false</ToolsCheckBox3>
+  <ToolsCheckBox2>false</ToolsCheckBox2>
+  <ToolsCheckBox3>true</ToolsCheckBox3>
   <ToolsRadioButton1>false</ToolsRadioButton1>
   <ToolsRadioButton2>true</ToolsRadioButton2>
   <ToolsRadioButton3>false</ToolsRadioButton3>
@@ -20,32 +19,29 @@
   <ToolsListBoxItem2>Hammer</ToolsListBoxItem2>
   <ToolsListBoxItem3>Hex Key</ToolsListBoxItem3>
   <ToolsListBoxItem4>Torque Wrench</ToolsListBoxItem4>
-  <ToolsListBoxSelectedItem>Torque Wrench</ToolsListBoxSelectedItem>
+  <ToolsListBoxSelectedItem>Hex Key</ToolsListBoxSelectedItem>
   <ToolsValue>Tools</ToolsValue>
-  <ToolsIndex>0</ToolsIndex>
   <WindowTab1>View</WindowTab1>
   <WindowTab2>Resolution</WindowTab2>
   <WindowCheckBox1>false</WindowCheckBox1>
   <WindowCheckBox2>true</WindowCheckBox2>
   <WindowValue>Window</WindowValue>
-  <WindowIndex>0</WindowIndex>
   <AdvancedLabel>Advanced ViewModel</AdvancedLabel>
   <AdvancedTab1>Advanced 1</AdvancedTab1>
   <AdvancedTab2>Advanced 2</AdvancedTab2>
   <AdvancedTab3>Advanced 3</AdvancedTab3>
   <AdvancedTab4>Advanced 4</AdvancedTab4>
-  <AdvancedCheckBox2>false</AdvancedCheckBox2>
-  <AdvancedCheckBox3>true</AdvancedCheckBox3>
-  <AdvancedCheckBox4>false</AdvancedCheckBox4>
+  <AdvancedCheckBox2>true</AdvancedCheckBox2>
+  <AdvancedCheckBox3>false</AdvancedCheckBox3>
+  <AdvancedCheckBox4>true</AdvancedCheckBox4>
   <AdvancedComboBox1Item1>English</AdvancedComboBox1Item1>
   <AdvancedComboBox1Item2>German</AdvancedComboBox1Item2>
   <AdvancedComboBox2Item1>Performance</AdvancedComboBox2Item1>
   <AdvancedComboBox2Item2>Power Saver</AdvancedComboBox2Item2>
   <AdvancedComboBox3Item1>Normal</AdvancedComboBox3Item1>
   <AdvancedComboBox3Item2>Stamina</AdvancedComboBox3Item2>
-  <AdvancedComboBox1SelectedItem>German</AdvancedComboBox1SelectedItem>
-  <AdvancedComboBox2SelectedItem>Power Saver</AdvancedComboBox2SelectedItem>
-  <AdvancedComboBox3SelectedItem>Stamina</AdvancedComboBox3SelectedItem>
+  <AdvancedComboBox1SelectedItem>English</AdvancedComboBox1SelectedItem>
+  <AdvancedComboBox2SelectedItem>Performance</AdvancedComboBox2SelectedItem>
+  <AdvancedComboBox3SelectedItem>Normal</AdvancedComboBox3SelectedItem>
   <AdvancedValue>Advanced</AdvancedValue>
-  <AdvancedIndex>0</AdvancedIndex>
 </WindowContent>

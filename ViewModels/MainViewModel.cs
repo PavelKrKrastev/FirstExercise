@@ -70,14 +70,14 @@ namespace NemetschekFirstAssigment.ViewModel
             {
                 if (closeWindowCommand == null)
                 {
-                    closeWindowCommand = new BaseViewModel(param => this.CloseWindow(), null);
+                    closeWindowCommand = new CommandsAndINPC(param => this.CloseWindow(), null);
                 }
                 return closeWindowCommand;
             }
         }
         private void CloseWindow()
         {
-            GeneralViewModel.SaveXml(FilePath, gModel);
+            GeneralViewModel.SaveXml(gModel);
         }
         #endregion
     }

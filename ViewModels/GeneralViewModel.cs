@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 
 namespace NemetschekFirstAssigment.ViewModel
 {
-    public class GeneralViewModel : BaseViewModel
+    public class GeneralViewModel : CommandsAndINPC
     {
         public static string ProjectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
         public static string PathToFile = Path.Combine(ProjectDirectory, "XmlFile");
@@ -122,11 +122,11 @@ namespace NemetschekFirstAssigment.ViewModel
         {
         }
 
-        public GeneralViewModel(string ListContent, int SelectedIndex, List<object> Subcategories)
+        public GeneralViewModel(string listContent, int selectedIndex, List<object> subcategories)
         {
-            this.ListContent = ListContent;
-            this.SelectedIndex = SelectedIndex;
-            this.Subcategories = Subcategories;
+            this.ListContent = listContent;
+            this.SelectedIndex = selectedIndex;
+            this.Subcategories = subcategories;
         }
 
         public GeneralViewModel(string tabName, object tabContent)
@@ -145,9 +145,9 @@ namespace NemetschekFirstAssigment.ViewModel
             }
         }
 
-        public static void SaveXml(string fileName, object GeneralModel)
+        public static void SaveXml(object GeneralModel)
         {
-            using (var stream = new FileStream(fileName, FileMode.Create))
+            using (var stream = new FileStream(FilePath, FileMode.Create))
             {
                 var XML = new XmlSerializer(typeof(GeneralModel));
                 XML.Serialize(stream, GeneralModel);

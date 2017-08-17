@@ -3,18 +3,18 @@ using System.ComponentModel;
 using System.Windows.Input;
 namespace NemetschekFirstAssigment.ViewModels
 {
-    public class BaseViewModel : INotifyPropertyChanged, ICommand
+    public class CommandsAndINPC : INotifyPropertyChanged, ICommand
     {
 
-        public BaseViewModel() { }
+        public CommandsAndINPC() { }
 
         #region Commands
-        public BaseViewModel(Action<object> execute)
+        public CommandsAndINPC(Action<object> execute)
             : this(execute, null)
         {
         }
 
-        public BaseViewModel(Action<object> execute, Predicate<object> canExecute)
+        public CommandsAndINPC(Action<object> execute, Predicate<object> canExecute)
         {
             if (execute == null)
                 throw new ArgumentNullException("execute");
